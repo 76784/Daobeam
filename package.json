@@ -1,8 +1,8 @@
 {
-    "name": "DaobeamWORKDIR",
+    "name": "Daobeam",
     "displayName": "Daobeam",
     "description": "Low contrast, light theme",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "publisher": "mike-flanigan",
 	"repository": {
 		"type": "git",
@@ -26,7 +26,7 @@
     "contributes": {
         "themes": [
             {
-                "label": "DaobeamWORKDIR",
+                "label": "Daobeam",
                 "uiTheme": "vs",
                 "path": "./themes/Daobeam-color-theme.json"
             }

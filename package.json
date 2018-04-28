@@ -1,0 +1,38 @@
+{
+    "name": "DaobeamWORKDIR",
+    "displayName": "Daobeam",
+    "description": "Low contrast, light theme",
+    "version": "1.0.3",
+    "publisher": "mike-flanigan",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/76784/Daobeam.git"
+	},
+	"license": "GNU General Public License v3.0",
+	"icon": "icon.png",
+	"keywords": [
+		"light theme",
+		"low contrast",
+		"light",
+        "easy on eyes",
+        "eye strain"
+	],
+    "engines": {
+        "vscode": "^1.21.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "DaobeamWORKDIR",
+                "uiTheme": "vs",
+                "path": "./themes/Daobeam-color-theme.json"
+            }
+        ]
+    },
+	"__metadata": {
+		"publisherDisplayName": "Mike Flanigan"
+	}
+}

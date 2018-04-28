@@ -1,0 +1,403 @@
+{
+	"name": "Daobeam",
+	"type": "light",
+	"colors": { 
+		"editor.background": "#E0DBC7", //E0DBC7
+		"editor.foreground": "#171717",
+		"editorLineNumber.foreground": "#666666",
+		"editor.inactiveSelectionBackground": "#E5EBF1",
+		"editorIndentGuide.background": "#D3D3D3",
+		"editor.selectionHighlightBackground": "#ADD6FF4D", 
+		"editorSuggestWidget.background": "#F3F3F3",
+		"activityBarBadge.background": "#007ACC",
+		"sideBarTitle.foreground": "#6F6F6F",
+		"sideBar.background": "#EDEBDE",
+		"sideBar.foreground": "#333333", 
+		"list.hoverBackground": "#E8E8E8"
+	},
+	"tokenColors": [			
+		{
+			"name": "Numeric constant",
+			"scope": [
+				"constant.numeric"
+			],
+			"settings": {
+				"foreground": "#000088"
+			}
+		},
+		{
+			"name": "Built-in constant (null, false, undefined)",
+			"scope": [
+				"constant.language"
+			],
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#884400"
+			}
+		},
+		{
+			"name": "HTML attribute",
+			"scope": "entity.other.attribute-name",
+			"settings": {
+				"foreground": "#922297"
+			}
+		},
+		{
+			"scope": "meta.tag.sgml.doctype.html",
+			"settings": {
+				"foreground": "#880000"
+			}
+		},
+		{
+			"name": "HTML tag name and `<`, `>`",
+			"scope": [
+			"entity.name.tag.structure.any.html",
+			"entity.name.tag",
+			"punctuation.definition.tag"
+			], 
+			"settings": {
+				"foreground": "#440088"
+			}
+		},
+		{
+			"scope": "comment",
+			"settings": {
+				"foreground": "#CC6600"
+			}
+		},
+		{
+			"scope": "entity.name.selector",
+			"settings": {
+				"foreground": "#872D05"
+			}
+		},
+		{
+			"scope": "invalid",
+			"settings": {
+				"fontStyle": "italic bold",
+				"foreground": "#959595" 
+			}
+		},
+		{
+			"scope": "string",
+			"settings": {
+				"foreground": "#882200"
+			}
+		},
+		{
+			"scope": [
+				"string.regexp",
+				"constant.regexp"
+			],
+			"settings": {
+				"foreground": "#880044"
+			}
+		},
+		{
+			"name": "Types declaration and references (e.g., `Sound` in Sound.prototype.play)",
+			"scope": [
+				"meta.function.expression.js meta.block.js support.class.js"
+			],
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#6f1643"
+			}
+		},
+		{
+			"scope": "support.type.property-name.json",
+			"settings": {
+				"foreground": "#440088"
+			}
+		},
+		{
+			"name": "for, if, return, and `only` in '@media only' in SCSS file (but not CSS file)",
+			"scope": [
+				"keyword.control"
+			],
+			"settings": {
+				"foreground": "#000088"
+			}
+		},
+		{
+			"name": "typeof, =, ===, !==, ||, && (`only`, `and` in CSS file, `and` in SCSS file)",
+			"scope": "keyword.operator",
+			"settings": {
+				"foreground": "#000000"
+			}
+		},
+		{
+			"name": "new keyword",
+			"scope": "keyword.operator.new",
+			"settings": {
+				"foreground": "#6f1643"
+			}
+		},
+		{
+			"name": "Variable",
+			"scope": ["variable"],
+			"settings": {
+				"foreground": "#880000"
+			}
+		}, 
+		{
+			"name": "JavaScript Variable Other Readwrite",
+			"scope": [
+				"variable.other.readwrite.js"
+			],
+			"settings": {
+				"foreground": "#171717"
+			}
+		},
+		{
+			"name": "JavaScript function variable name",
+			"scope": [
+				 "meta.definition.variable.js entity.name.function.js"
+			],
+			"settings": {
+				"foreground": "#880000"
+			}
+		},
+		{
+			"name": "JavaScript function name at invocation",
+			"scope": [
+				 "meta.function-call.js entity.name.function.js"
+			],
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#880000"
+			}
+		},
+		{
+			"name": "JavaSript `var`",
+			"scope": "storage.type.js",
+			"settings": {
+				"foreground": "#000088"
+			}
+		},
+		{
+			"name": "JavaScript `function` reserved word ('function')",
+			"scope": [
+				"storage.type.function.js"
+			],
+			"settings": {
+				"foreground": "#000088"
+			}
+		},	
+		{
+			"name": "function `Name`",
+			"scope": [
+				"meta.function.js meta.definition.function.js entity.name.function.js"
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#880000"
+			}
+		},			
+		{
+			"name": "var `nameOfFunction`",
+			"scope": [
+				"meta.var-single-variable.expr.js meta.definition.variable.js entity.name.function.js"
+			],
+			"settings": {
+				"foreground": "#880000"
+			}
+		},	
+		{
+			"name": "JavaScript Type (new `TypeName`)",
+			"scope": [
+				"entity.name.type.js"
+			],
+			"settings": {
+				"fontStyle": "italic bold",
+				"foreground": "#6f1643"
+			}
+		},	
+		{
+			"name": "JavaScript `this` variable",
+			"scope": "variable.language.this.js",
+			"settings": {
+				"foreground": "#000000" //000088
+			}
+		},
+		{
+			"name": "Library function", 
+			"scope": "support.function.dom.js",
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#125A12" //880000 166f16
+			}
+		},
+		{
+			"name": "JavaScript parameter", 
+			"scope": "variable.parameter.js",
+			"settings": {
+				"foreground": "#171717" //880000 166f16
+			}
+		},
+		{
+			"name": "`MYAPP` in var MYAPP = {}", 
+			"scope": [
+				"variable.other.constant.js",
+				"variable.other.constant.object.js"
+			],
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#880000"
+			}
+		},
+		{
+			"name": "object created by DOM function", 
+			"scope": [
+				"meta.block.js meta.block.js meta.function-call.js variable.other.object.js"
+			],
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#880000"
+			}
+		},
+		{
+			"name": "xxxx", 
+			"scope": [
+				"support.class.console.js"
+			],
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#880000"
+			}
+		},
+		{
+			"name": "Tag name in CSS file",
+			"scope": "entity.name.tag.css",
+			"settings": {
+				"foreground": "#880000",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "id and classname in CSS file",
+			"scope": [
+				"entity.other.attribute-name.class.css",
+				"entity.other.attribute-name.class.scss",
+				"entity.other.attribute-name.class.mixin.css",
+				"entity.other.attribute-name.class.mixin.scss",
+				"entity.other.attribute-name.id.css",
+				"entity.other.attribute-name.id.scss",
+				"entity.other.attribute-name.parent-selector.css",
+				"entity.other.attribute-name.parent-selector.scss",
+				"entity.other.attribute-name.pseudo-class.css",
+				"entity.other.attribute-name.pseudo-class.scss",
+				"entity.other.attribute-name.pseudo-element.css",
+				"entity.other.attribute-name.pseudo-element.scss",
+				"entity.other.attribute-name.attribute.css",
+				"entity.other.attribute-name.attribute.scss",
+				"entity.other.attribute-name.css",
+				"entity.other.attribute-name.scss"
+			],
+			"settings": {
+				"foreground": "#880000"
+			}
+		},
+		{
+			"name": "property-name in CSS file",
+			"scope": [
+				"support.type.property-name.css",
+				"meta.property-name.css",
+				"meta.property-list.css",
+				"source.css",
+				"meta.property-name.scss",
+				"meta.property-list.scss",
+				"source.css.scss",
+				"meta.property-list entity.name.tag.css"
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#880088"
+			}
+		},
+		{
+			"name": "property-value in CSS and SCSS file",
+			"scope": [				
+				"support.constant.property-value.css",
+				"meta.property-value.scss",
+				"meta.property-list.scss",
+				"source.css.scss",
+				"string.quoted.single.css",
+				"meta.property-value.css",
+				"meta.property-list.css",
+				"source.css",
+				"string.quoted.single.scss",
+				"variable.scss",
+				"source.css.scss",
+				"support.constant.font-name.css",
+				"constant.numeric.css",
+				"keyword.other.unit.px.css"
+			],
+			"settings": {
+				"foreground": "#000088"
+			}
+		},
+		{
+			"name": "variable in SCSS and CSS file", 
+			"scope": [
+				"variable.scss",
+				"variable.css"
+			],
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#000088"
+			}
+		},
+		{
+			"name": "`only` in SCSS file",
+			"scope": [
+				"keyword.operator.logical.only.media.css",
+				"meta.at-rule.media.header.css",
+				"source.css",
+				"keyword.control.operator.css.scss",
+				"meta.at-rule.media.scss",
+				"source.css.scss"
+			],
+			"settings": {
+				"foreground": "#171717"				
+			}
+		},	
+		{
+			"name": "CSS @at-rule",
+			"scope": [
+				"keyword.control.at-rule"
+			],
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#880000"
+			}
+		},
+		// Python ***********************
+		{
+			"name": "Python `class`",
+			"scope": [
+				"storage.type.class.python"
+			],
+			"settings": {
+				"foreground": "#000088"
+			}
+		},
+		{
+			"name": "Python class `Name`",
+			"scope": [
+				"entity.name.type.class.python"
+			],
+			"settings": {
+				"foreground": "#880000"
+			}
+		},
+		{
+			"name": "Python `def``",
+			"scope": [
+				"storage.type.function.python"
+			],
+			"settings": {
+				"fontStyle": "italic"
+			}
+		}
+	]
+}

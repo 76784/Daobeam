@@ -2,7 +2,7 @@
 	"name": "Daobeam",
 	"type": "light",
 	"colors": { 
-		"editor.background": "#E0DBC7", //E0DBC7
+		"editor.background": "#E0DBC7",
 		"editor.foreground": "#171717",
 		"editorLineNumber.foreground": "#666666",
 		"editor.inactiveSelectionBackground": "#E5EBF1",
@@ -14,11 +14,29 @@
 		"sideBar.background": "#EDEBDE",
 		"sideBar.foreground": "#333333", 
 		"list.hoverBackground": "#E8E8E8",
+		
+		"badge.background": "#666666",
+		"badge.foreground": "#EDEBDE",
+		"panel.background": "#dddddd",
+		"panel.dropBackground": "#ff0000", // ??
+
+		"panelTitle.activeForeground": "#000000",
+		"panelTitle.activeBorder": "#666666",
+		"panelTitle.inactiveForeground": "#666666",
+		"panel.border": "#666666",	
+			
+		
 		"terminal.background": "#dddddd", 
 		"terminal.foreground": "#171717",
 		"terminal.border": "#666666",
-		"terminal.ansiBrightYellow": "#007ACC",
-		"panel.border": "#666666",
+		
+		// changed from default
+		"terminal.ansiYellow": "#838800", 
+		"terminal.ansiWhite": "#E8E8E8", 
+		"terminal.ansiBrightYellow": "#838800", 
+		"terminal.ansiBrightGreen": "#209F20", 
+		"terminal.ansiCyan": "#0074C1", 
+		
 		"sideBar.border": "#666666",
 		"tab.inactiveForeground": "#333333",
 		"tab.activeForeground": "#000000",
@@ -41,7 +59,7 @@
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#884400"
+				"foreground": "#0074C1" 
 			}
 		},
 		{
@@ -225,7 +243,7 @@
 			"name": "JavaScript `this` variable",
 			"scope": "variable.language.this.js",
 			"settings": {
-				"foreground": "#000000" //000088
+				"foreground": "#000000"
 			}
 		},
 		{
@@ -233,14 +251,14 @@
 			"scope": "support.function.dom.js",
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#125A12" //880000 166f16
+				"foreground": "#125A12"
 			}
 		},
 		{
 			"name": "JavaScript parameter", 
 			"scope": "variable.parameter.js",
 			"settings": {
-				"foreground": "#171717" //880000 166f16
+				"foreground": "#171717"
 			}
 		},
 		{
@@ -274,6 +292,57 @@
 				"foreground": "#880000"
 			}
 		},
+		// ECMAScript 6 **********************************,
+		{
+			"name": "`class` reserved word", 
+			"scope": [
+				"source.js meta.class.js storage.type.class.js",
+				"source.js meta.class.js storage.modifier.js"
+			],
+			"settings": {
+				"foreground": "#000088"
+			}
+		},
+		{
+			"name": "type `Name`", 
+			"scope": [
+				"source.js meta.class.js entity.name.type.class.js",
+				"source.js meta.import.js variable.other.readwrite.alias.js",
+				"source.js meta.function-call.js variable.other.object.js"
+			],
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#880000"
+			}
+		},
+		{
+			"name": "`Component`", 
+			"scope": [
+				"source.js meta.class.js entity.other.inherited-class.js"
+			],
+			"settings": {
+				"foreground": "#880000"
+			}
+		},
+		{
+			"name": "`React`", 
+			"scope": [
+				"source.js meta.class.js entity.name.type.module.js"
+			],
+			"settings": {
+				"foreground": "#000000"
+			}
+		},
+		{
+			"name": "`render()`", 
+			"scope": [
+				"source.js meta.class.js meta.method.declaration.js meta.definition.method.js entity.name.function.js"
+			],
+			"settings": {
+				"foreground": "#880000"
+			}
+		},
+		// CSS **********************************
 		{
 			"name": "Tag name in CSS file",
 			"scope": "entity.name.tag.css",
@@ -552,7 +621,7 @@
 				"text.html.markdown meta.paragraph.markdown meta.image.reference.markdown string.other.link.description.markdown"
 			],
 			"settings": {
-				"foreground": "#0074C1" //4646FF 007ACC
+				"foreground": "#0074C1" 
 			}
 		},
 		{

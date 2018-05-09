@@ -3,7 +3,7 @@
 ## Philosophy
 Have you ever watched television in a totally dark room? That is an example of high contrast. It is hard on your eyes. It leads to eye strain. It is unhealthy.
 
-People like dark themes with bright foreground colors because they are eye-catching in the showroom. But most of these dark themes are very high contrast (for example: Monokai). You're asking for eye strain by using themes like these. As a professional coder, I would not use a high contrast theme.
+People like dark themes with bright foreground colors because they are eye-catching in the showroom. But most of these dark themes are very high contrast (example: Monokai). You're asking for eye strain by using themes like these. As a professional coder, I would not use a high contrast theme.
 
 There are relatively few low contrast themes in general. They are much harder to design, and to design well. So I decided to design one myself.
 
@@ -40,7 +40,7 @@ In my CSS screenshots, notice how the property values are all the same color (go
 ## Recommendations
 DejaVu Sans Mono for a coding font.
 
-Do View / Reset Zoom. I use a font-size of 17px on a 1920x1200 monitor. Use alt + Z to word wrap - I wish that were the VS Code default.
+Do View / Reset Zoom. I use a font-size of 18px on a 1920x1200 monitor. Use alt + Z to word wrap - I wish that were the VS Code default.
 
 ## License
 

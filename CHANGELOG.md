@@ -5,7 +5,18 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-- ECMAScript 6
+- ECMAScript 2015 (aka, ES6)
+
+## [1.1.3] - 2018-06-30
+### Changed
+- for JavaScript
+    - function name bold (invocation of function is unchanged)
+    - User in User.prototype.toString bold font, non-italic
+    - Object in Object.getPrototypeOf(u) bold font
+    - use theme-existing purple foreground color for JS variable name 
+    - use theme-existing blue foreground color for array braces
+    - other minor font changes for the sake of consistency
+    - update screenshot
 
 ## [1.1.2] - 2018-05-09
 ### Fixed
@@ -19,7 +30,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Foreground and background colors of Problems / Output / Debug Console 
 - More closely following format of [Keep a Changelog](http://keepachangelog.com/)
 - Changlog now follows [Semantic Versioning](http://semver.org/spec/v2.0.0.html)
-    -- Previous version should have been version 1.1.0 when Markdown was added (functionality added, minor version number increments)
+    - Previous version should have been version 1.1.0 when Markdown was added (functionality added, minor version number increments)
 
 ## [1.0.4] - 2018-04-27
 ### Added

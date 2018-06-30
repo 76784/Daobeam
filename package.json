@@ -1,9 +1,9 @@
 {
-    "name": "Daobeam",
-    "displayName": "Daobeam",
-    "description": "Low contrast, light theme",
-    "version": "1.1.2",
-    "publisher": "mike-flanigan",
+	"name": "Daobeam",
+	"displayName": "Daobeam",
+	"description": "Low contrast, light theme",
+	"version": "1.1.3",
+	"publisher": "mike-flanigan",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/76784/Daobeam.git"
@@ -14,25 +14,22 @@
 		"light theme",
 		"low contrast",
 		"light",
-        "easy on eyes",
-        "eye strain"
+		"easy on eyes",
+		"eye strain"
 	],
-    "engines": {
-        "vscode": "^1.21.0"
-    },
-    "categories": [
-        "Themes"
-    ],
-    "contributes": {
-        "themes": [
-            {
-                "label": "Daobeam",
-                "uiTheme": "vs",
-                "path": "./themes/Daobeam-color-theme.json"
-            }
-        ]
-    },
-	"__metadata": {
-		"publisherDisplayName": "Mike Flanigan"
+	"engines": {
+		"vscode": "^1.21.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Daobeam",
+				"uiTheme": "vs",
+				"path": "./themes/Daobeam-color-theme.json"
+			}
+		]
 	}
 }

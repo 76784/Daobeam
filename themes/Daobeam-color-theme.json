@@ -18,7 +18,7 @@
 		"badge.background": "#666666",
 		"badge.foreground": "#EDEBDE",
 		"panel.background": "#dddddd",
-		"panel.dropBackground": "#ff0000", // ??
+		//"panel.dropBackground": "#ff0000", // 
 
 		"panelTitle.activeForeground": "#000000",
 		"panelTitle.activeBorder": "#666666",
@@ -121,16 +121,6 @@
 			}
 		},
 		{
-			"name": "Types declaration and references (e.g., `Sound` in Sound.prototype.play)",
-			"scope": [
-				"meta.function.expression.js meta.block.js support.class.js"
-			],
-			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#6f1643"
-			}
-		},
-		{
 			"scope": "support.type.property-name.json",
 			"settings": {
 				"foreground": "#440088"
@@ -153,13 +143,6 @@
 			}
 		},
 		{
-			"name": "new keyword",
-			"scope": "keyword.operator.new",
-			"settings": {
-				"foreground": "#6f1643"
-			}
-		},
-		{
 			"name": "Variable",
 			"scope": ["variable"],
 			"settings": {
@@ -172,16 +155,17 @@
 				"variable.other.readwrite.js"
 			],
 			"settings": {
-				"foreground": "#171717"
+				"foreground": "#922297" //922297
 			}
 		},
 		{
 			"name": "JavaScript function variable name",
 			"scope": [
-				 "meta.definition.variable.js entity.name.function.js"
+				 "source.js meta.function.expression.js meta.block.js meta.function.js meta.definition.function.js entity.name.function.js"
 			],
 			"settings": {
-				"foreground": "#880000"
+				"foreground": "#880000",
+				"fontStyle": "bold"
 			}
 		},
 		{
@@ -226,6 +210,7 @@
 				"meta.var-single-variable.expr.js meta.definition.variable.js entity.name.function.js"
 			],
 			"settings": {
+				"fontStyle": "bold",
 				"foreground": "#880000"
 			}
 		},	
@@ -235,10 +220,10 @@
 				"entity.name.type.js"
 			],
 			"settings": {
-				"fontStyle": "italic bold",
-				"foreground": "#6f1643"
+				"fontStyle": "bold",
+				"foreground": "#880000"
 			}
-		},	
+		},
 		{
 			"name": "JavaScript `this` variable",
 			"scope": "variable.language.this.js",
@@ -290,6 +275,52 @@
 			"settings": {
 				"fontStyle": "bold",
 				"foreground": "#880000"
+			}
+		},
+		{
+			"name": "`User` in User.prototype.toString", 
+			"scope": [
+				"source.js support.class.js",
+				"source.js meta.function.expression.js meta.block.js support.class.js",
+				"source.js meta.function.expression.js meta.block.js meta.var.expr.js new.expr.js entity.name.type.js",
+				"source.js meta.function.expression.js meta.block.js meta.function.js meta.block.js variable.other.object.js",
+				"source.js variable.other.object.js"
+			],
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#880000"
+			}
+		},
+		{
+			"name": "`xml` in xml.async = false", 
+			"scope": [
+				"source.js meta.var.expr.js meta.function.expression.js meta.block.js meta.block.js meta.block.js meta.function-call.js variable.other.object.js",
+				"source.js meta.var.expr.js meta.function.expression.js meta.block.js meta.block.js meta.block.js variable.other.object.js",
+				"source.js meta.var.expr.js meta.function.expression.js meta.block.js meta.block.js meta.block.js variable.other.readwrite.js",
+				"source.js meta.var.expr.js meta.function.expression.js meta.block.js meta.block.js variable.other.readwrite.js",
+				"source.js meta.var.expr.js meta.function.expression.js meta.block.js meta.var.expr.js meta.var-single-variable.expr.js meta.definition.variable.js variable.other.readwrite.js",
+				"source.js meta.var.expr.js meta.function.expression.js meta.block.js variable.other.readwrite.js"
+			],
+			"settings": {
+				"foreground": "#922297"
+			}
+		},
+		{
+			"name": "`Object` in Object.getPrototypeOf(u)", 
+			"scope": [
+				"source.js meta.function.expression.js meta.block.js meta.function-call.js support.class.builtin.js"
+			],
+			"settings": {
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "meta.brace.square.js", 
+			"scope": [
+				"source.js meta.function.expression.js meta.block.js meta.var.expr.js meta.objectliteral.js meta.object.member.js meta.array.literal.js meta.brace.square.js"
+			],
+			"settings": {
+				"foreground": "#007ACC"
 			}
 		},
 		// ECMAScript 6 **********************************,

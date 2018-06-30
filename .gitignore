@@ -1,4 +1,5 @@
 node_modules
 *.vsix
+*.xcf
 themes/Daobeam-color-theme-COMMENTED.json
 Daobeam-NOTES.txt

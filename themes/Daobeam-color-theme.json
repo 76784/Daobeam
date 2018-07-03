@@ -157,17 +157,7 @@
 			"settings": {
 				"foreground": "#171717" //922297
 			}
-		},
-		{
-			"name": "JavaScript function variable name",
-			"scope": [
-				 "source.js meta.function.expression.js meta.block.js meta.function.js meta.definition.function.js entity.name.function.js"
-			],
-			"settings": {
-				"foreground": "#880000",
-				"fontStyle": "bold"
-			}
-		},		
+		},	
 		{
 			"name": "Library function", 
 			"scope": [
@@ -185,7 +175,9 @@
 			"scope": [
 				 "meta.function-call.js entity.name.function.js",
 				 "source.js meta.function.expression.js meta.block.js meta.var.expr.js meta.function-call.js entity.name.function.js",
-				 "source.js meta.function.expression.js meta.block.js meta.function-call.js entity.name.function.js"
+				 "source.js meta.function.expression.js meta.block.js meta.function-call.js entity.name.function.js",
+				 "source.js meta.function.expression.js meta.block.js meta.function.js meta.block.js meta.function-call.js support.function.js",
+				 "source.js meta.function.js meta.block.js meta.function-call.js support.function.js"
 			],
 			"settings": {
 				"fontStyle": "italic",
@@ -207,27 +199,7 @@
 			"settings": {
 				"foreground": "#000088"
 			}
-		},	
-		{
-			"name": "function `Name`",
-			"scope": [
-				"meta.function.js meta.definition.function.js entity.name.function.js"
-			],
-			"settings": {
-				"fontStyle": "bold",
-				"foreground": "#880000"
-			}
 		},
-		{
-			"name": "var `nameOfFunction`",
-			"scope": [
-				"meta.var-single-variable.expr.js meta.definition.variable.js entity.name.function.js"
-			],
-			"settings": {
-				"fontStyle": "bold",
-				"foreground": "#880000"
-			}
-		},	
 		{
 			"name": "name of function when a property of an object",
 			"scope": [
@@ -239,9 +211,33 @@
 			}
 		},	
 		{
-			"name": "Scene.prototype.`register`",
+			"name": "function names",
 			"scope": [
-				"source.js meta.function.expression.js meta.block.js entity.name.function.js"
+				//JavaScript function variable name
+				 "source.js meta.function.expression.js meta.block.js meta.function.js meta.definition.function.js entity.name.function.js",
+				//function `Name`				
+				"meta.function.js meta.definition.function.js entity.name.function.js",
+				//var `nameOfFunction`
+				"meta.var-single-variable.expr.js meta.definition.variable.js entity.name.function.js",
+				//Scene.prototype.`register`
+				"source.js meta.function.expression.js meta.block.js entity.name.function.js",
+				"source.js entity.name.function.js",
+				//JavaScript Type (new `TypeName`)
+				"entity.name.type.js",
+				//MYAPP` in var MYAPP = {}				
+				"variable.other.constant.js",
+				"variable.other.constant.object.js",
+				//object created by DOM function				
+				// "meta.block.js meta.block.js meta.function-call.js variable.other.object.js",
+				//`console`.log
+				"support.class.console.js",
+				//`User` in User.prototype.toString				
+				"source.js support.class.js",
+				//"source.js variable.other.object.js",
+				"source.js meta.function.expression.js meta.block.js support.class.js",
+				"source.js meta.function.expression.js meta.block.js meta.var.expr.js new.expr.js entity.name.type.js"
+				//,
+				//"source.js meta.function.expression.js meta.block.js meta.function.js meta.block.js variable.other.object.js"
 			],
 			"settings": {
 				"fontStyle": "bold",
@@ -251,7 +247,8 @@
 		{
 			"name": "property in SpaceShip.prototype.`left`",
 			"scope": [
-				"source.js meta.function.expression.js meta.block.js support.variable.property.dom.js"
+				"source.js meta.function.expression.js meta.block.js support.variable.property.dom.js",
+				"source.js support.variable.property.dom.js"
 			],
 			"settings": {
 				"fontStyle": "bold"
@@ -264,16 +261,6 @@
 			],
 			"settings": {
 				"fontStyle": ""
-			}
-		},
-		{
-			"name": "JavaScript Type (new `TypeName`)",
-			"scope": [
-				"entity.name.type.js"
-			],
-			"settings": {
-				"fontStyle": "bold",
-				"foreground": "#880000"
 			}
 		},
 		{
@@ -298,60 +285,23 @@
 			}
 		},
 		{
-			"name": "`MYAPP` in var MYAPP = {}", 
+			"name": "variable names", 
 			"scope": [
-				"variable.other.constant.js",
-				"variable.other.constant.object.js"
-			],
-			"settings": {
-				"fontStyle": "bold",
-				"foreground": "#880000"
-			}
-		},
-		{
-			"name": "object created by DOM function", 
-			"scope": [
-				"meta.block.js meta.block.js meta.function-call.js variable.other.object.js"
-			],
-			"settings": {
-				"fontStyle": "bold",
-				"foreground": "#880000"
-			}
-		},
-		{
-			"name": "`console`.log", 
-			"scope": [
-				"support.class.console.js"
-			],
-			"settings": {
-				"fontStyle": "bold",
-				"foreground": "#880000"
-			}
-		},
-		{
-			"name": "`User` in User.prototype.toString", 
-			"scope": [
-				"source.js support.class.js",
-				"source.js meta.function.expression.js meta.block.js support.class.js",
-				"source.js meta.function.expression.js meta.block.js meta.var.expr.js new.expr.js entity.name.type.js",
-				"source.js meta.function.expression.js meta.block.js meta.function.js meta.block.js variable.other.object.js"
-			],
-			"settings": {
-				"fontStyle": "bold",
-				"foreground": "#880000"
-			}
-		},
-		{
-			"name": "`xml` in xml.async = false", 
-			"scope": [
+				//`xml` in xml.async = false
 				"source.js meta.var.expr.js meta.function.expression.js meta.block.js meta.block.js meta.block.js meta.function-call.js variable.other.object.js",
 				"source.js meta.var.expr.js meta.function.expression.js meta.block.js meta.block.js meta.block.js variable.other.object.js",
+				//"source.js meta.function.expression.js meta.block.js meta.function-call.js variable.other.object.js",
+
 				"source.js meta.var.expr.js meta.function.expression.js meta.block.js meta.block.js meta.block.js variable.other.readwrite.js",
 				"source.js meta.var.expr.js meta.function.expression.js meta.block.js meta.block.js variable.other.readwrite.js",
 				"source.js meta.var.expr.js meta.function.expression.js meta.block.js meta.var.expr.js meta.var-single-variable.expr.js meta.definition.variable.js variable.other.readwrite.js",
 				"source.js meta.var.expr.js meta.function.expression.js meta.block.js variable.other.readwrite.js",
-				"source.js meta.function.expression.js meta.block.js meta.function-call.js variable.other.object.js",
-				"source.js meta.function.expression.js meta.block.js meta.var.expr.js meta.var-single-variable.expr.js meta.definition.variable.js variable.other.readwrite.js"
+				//"source.js meta.function.js meta.block.js variable.other.readwrite.js",
+				"source.js meta.function.expression.js meta.block.js meta.var.expr.js meta.var-single-variable.expr.js meta.definition.variable.js variable.other.readwrite.js",
+				"source.js meta.var.expr.js meta.var-single-variable.expr.js meta.definition.variable.js variable.other.readwrite.js",
+				
+				"source.js meta.function.js meta.block.js support.variable.property.dom.js",
+				"source.js meta.function.js meta.block.js variable.other.property.js"
 			],
 			"settings": {
 				"foreground": "#922297"
@@ -390,8 +340,9 @@
 			"name": "type `Name`", 
 			"scope": [
 				"source.js meta.class.js entity.name.type.class.js",
-				"source.js meta.import.js variable.other.readwrite.alias.js",
-				"source.js meta.function-call.js variable.other.object.js"
+				"source.js meta.import.js variable.other.readwrite.alias.js"
+				//,
+				//"source.js meta.function-call.js variable.other.object.js"
 			],
 			"settings": {
 				"fontStyle": "bold",
@@ -414,15 +365,6 @@
 			],
 			"settings": {
 				"foreground": "#000000"
-			}
-		},
-		{
-			"name": "`render()`", 
-			"scope": [
-				"source.js meta.class.js meta.method.declaration.js meta.definition.method.js entity.name.function.js"
-			],
-			"settings": {
-				"foreground": "#880000"
 			}
 		},
 		// CSS **********************************

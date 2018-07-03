@@ -16,6 +16,9 @@ HTML, CSS, SCSS, JavaScript, JSON, Markdown
 
 ## See Below the Screenshots for More Info
 
+## Full Editor
+!["Full Editor Screenshot"][6]
+
 ## JavaScript
 !["JavaScript Screenshot"][1]
 
@@ -62,5 +65,7 @@ GNU General Public License v3.0
 [4]:https://raw.githubusercontent.com/76784/Daobeam/master/screenshots/json.png
 
 [5]:https://raw.githubusercontent.com/76784/Daobeam/master/screenshots/beige-usages.png
+
+[6]:https://raw.githubusercontent.com/76784/Daobeam/master/screenshots/full-editor.png
 
 ## Enjoy **Daobeam**!

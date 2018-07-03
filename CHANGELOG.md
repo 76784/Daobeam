@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 - ECMAScript 2015 (aka, ES6)
 
+## [1.1.5] - 2018-07-03
+### Changed
+- for JavaScript
+    - variable and function name -  improve consistency when inside and outside of functions and grouping parens
+    - substantial refactoring
 
 ## [1.1.4] - 2018-07-02
 ### Changed

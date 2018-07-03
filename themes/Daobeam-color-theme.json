@@ -155,7 +155,7 @@
 				"variable.other.readwrite.js"
 			],
 			"settings": {
-				"foreground": "#922297" //922297
+				"foreground": "#171717" //922297
 			}
 		},
 		{
@@ -167,11 +167,25 @@
 				"foreground": "#880000",
 				"fontStyle": "bold"
 			}
-		},
+		},		
+		{
+			"name": "Library function", 
+			"scope": [
+				"support.function.dom.js",
+				"source.js meta.function.expression.js meta.block.js meta.var.expr.js meta.function-call.js entity.name.function.js",
+				"source.js meta.function.expression.js meta.block.js meta.function.js meta.block.js meta.function-call.js entity.name.function.js"
+			],
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#125A12"
+			}
+		},		
 		{
 			"name": "JavaScript function name at invocation",
 			"scope": [
-				 "meta.function-call.js entity.name.function.js"
+				 "meta.function-call.js entity.name.function.js",
+				 "source.js meta.function.expression.js meta.block.js meta.var.expr.js meta.function-call.js entity.name.function.js",
+				 "source.js meta.function.expression.js meta.block.js meta.function-call.js entity.name.function.js"
 			],
 			"settings": {
 				"fontStyle": "italic",
@@ -200,10 +214,10 @@
 				"meta.function.js meta.definition.function.js entity.name.function.js"
 			],
 			"settings": {
-				"fontStyle": "",
+				"fontStyle": "bold",
 				"foreground": "#880000"
 			}
-		},			
+		},
 		{
 			"name": "var `nameOfFunction`",
 			"scope": [
@@ -214,6 +228,44 @@
 				"foreground": "#880000"
 			}
 		},	
+		{
+			"name": "name of function when a property of an object",
+			"scope": [
+				"source.js meta.function.expression.js meta.block.js meta.var.expr.js meta.objectliteral.js meta.object.member.js meta.object-literal.key.js entity.name.function.js",
+				"source.js meta.function.expression.js meta.block.js meta.function.js meta.block.js meta.objectliteral.js meta.object.member.js meta.object-literal.key.js entity.name.function.js"
+			],
+			"settings": {
+				"foreground": "#880000"
+			}
+		},	
+		{
+			"name": "Scene.prototype.`register`",
+			"scope": [
+				"source.js meta.function.expression.js meta.block.js entity.name.function.js"
+			],
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#880000"
+			}
+		},	
+		{
+			"name": "property in SpaceShip.prototype.`left`",
+			"scope": [
+				"source.js meta.function.expression.js meta.block.js support.variable.property.dom.js"
+			],
+			"settings": {
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "support.variable.property.dom.js",
+			"scope": [
+				"source.js meta.function.expression.js meta.block.js meta.function.js meta.block.js support.variable.property.dom.js"
+			],
+			"settings": {
+				"fontStyle": ""
+			}
+		},
 		{
 			"name": "JavaScript Type (new `TypeName`)",
 			"scope": [
@@ -232,11 +284,10 @@
 			}
 		},
 		{
-			"name": "Library function", 
-			"scope": "support.function.dom.js",
+			"name": "this.`context` = blah",
+			"scope": "variable.other.property.js",
 			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#125A12"
+				"foreground": "#171717"
 			}
 		},
 		{
@@ -283,8 +334,7 @@
 				"source.js support.class.js",
 				"source.js meta.function.expression.js meta.block.js support.class.js",
 				"source.js meta.function.expression.js meta.block.js meta.var.expr.js new.expr.js entity.name.type.js",
-				"source.js meta.function.expression.js meta.block.js meta.function.js meta.block.js variable.other.object.js",
-				"source.js variable.other.object.js"
+				"source.js meta.function.expression.js meta.block.js meta.function.js meta.block.js variable.other.object.js"
 			],
 			"settings": {
 				"fontStyle": "bold",
@@ -299,7 +349,9 @@
 				"source.js meta.var.expr.js meta.function.expression.js meta.block.js meta.block.js meta.block.js variable.other.readwrite.js",
 				"source.js meta.var.expr.js meta.function.expression.js meta.block.js meta.block.js variable.other.readwrite.js",
 				"source.js meta.var.expr.js meta.function.expression.js meta.block.js meta.var.expr.js meta.var-single-variable.expr.js meta.definition.variable.js variable.other.readwrite.js",
-				"source.js meta.var.expr.js meta.function.expression.js meta.block.js variable.other.readwrite.js"
+				"source.js meta.var.expr.js meta.function.expression.js meta.block.js variable.other.readwrite.js",
+				"source.js meta.function.expression.js meta.block.js meta.function-call.js variable.other.object.js",
+				"source.js meta.function.expression.js meta.block.js meta.var.expr.js meta.var-single-variable.expr.js meta.definition.variable.js variable.other.readwrite.js"
 			],
 			"settings": {
 				"foreground": "#922297"

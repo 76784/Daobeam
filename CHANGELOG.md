@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 - ECMAScript 2015 (aka, ES6)
 
+
+## [1.1.4] - 2018-07-02
+### Changed
+- for JavaScript
+    - painstaking foreground coloring work
+    - color and style of function name when outside of grouping parens
+    - color and style of function name at prototype definition
+    - color of function name defined in an object (e.g., blah in blah: function()...)
+    - bold font for property at prototype definition
+    - make color of property names consistent
+    - bind(), map(), etc., now colored like library functions (part of the language - a function you did not write)
+
 ## [1.1.3] - 2018-06-30
 ### Changed
 - for JavaScript

@@ -10,21 +10,20 @@
 		"editor.selectionHighlightBackground": "#ADD6FF4D", 
 		"editorSuggestWidget.background": "#F3F3F3",
 		"activityBarBadge.background": "#007ACC",
-		"sideBarTitle.foreground": "#6F6F6F",
+		"sideBarTitle.foreground": "#000000",
+		"sideBarSectionHeader.foreground": "#000000",
 		"sideBar.background": "#EDEBDE",
-		"sideBar.foreground": "#333333", 
-		"list.hoverBackground": "#E8E8E8",
+		"sideBar.foreground": "#000000", 
+		"list.hoverBackground": "#E0E0E0",
 		
 		"badge.background": "#666666",
 		"badge.foreground": "#EDEBDE",
 		"panel.background": "#dddddd",
-		//"panel.dropBackground": "#ff0000", // 
 
 		"panelTitle.activeForeground": "#000000",
 		"panelTitle.activeBorder": "#666666",
 		"panelTitle.inactiveForeground": "#666666",
-		"panel.border": "#666666",	
-			
+		"panel.border": "#666666",			
 		
 		"terminal.background": "#dddddd", 
 		"terminal.foreground": "#171717",
@@ -161,23 +160,33 @@
 		{
 			"name": "Library function", 
 			"scope": [
-				"support.function.dom.js",
-				"source.js meta.function.expression.js meta.block.js meta.var.expr.js meta.function-call.js entity.name.function.js",
+				"source.js meta.function.js meta.block.js meta.block.js meta.function-call.js support.function.dom.js"
+				,
+				"source.js meta.function.expression.js meta.block.js meta.var.expr.js meta.function-call.js entity.name.function.js"
+				,
 				"source.js meta.function.expression.js meta.block.js meta.function.js meta.block.js meta.function-call.js entity.name.function.js"
+				,
+				"source.js meta.var.expr.js meta.function.expression.js meta.block.js meta.function-call.js support.function.dom.js"
 			],
 			"settings": {
 				"fontStyle": "italic",
 				"foreground": "#125A12"
 			}
-		},		
+		},
 		{
 			"name": "JavaScript function name at invocation",
 			"scope": [
-				 "meta.function-call.js entity.name.function.js",
-				 "source.js meta.function.expression.js meta.block.js meta.var.expr.js meta.function-call.js entity.name.function.js",
-				 "source.js meta.function.expression.js meta.block.js meta.function-call.js entity.name.function.js",
-				 "source.js meta.function.expression.js meta.block.js meta.function.js meta.block.js meta.function-call.js support.function.js",
-				 "source.js meta.function.js meta.block.js meta.function-call.js support.function.js"
+				"source.js meta.function.js meta.block.js new.expr.js meta.function.expression.js meta.block.js meta.function-call.js support.function.dom.js"
+				,
+				"meta.function-call.js entity.name.function.js"
+				,
+				"source.js meta.function.expression.js meta.block.js meta.var.expr.js meta.function-call.js entity.name.function.js"
+				,
+				"source.js meta.function.expression.js meta.block.js meta.function-call.js entity.name.function.js"
+				,
+				"source.js meta.function.expression.js meta.block.js meta.function.js meta.block.js meta.function-call.js support.function.js"
+				,
+				"source.js meta.function.js meta.block.js meta.function-call.js support.function.js"
 			],
 			"settings": {
 				"fontStyle": "italic",
@@ -341,8 +350,6 @@
 			"scope": [
 				"source.js meta.class.js entity.name.type.class.js",
 				"source.js meta.import.js variable.other.readwrite.alias.js"
-				//,
-				//"source.js meta.function-call.js variable.other.object.js"
 			],
 			"settings": {
 				"fontStyle": "bold",
@@ -367,6 +374,46 @@
 				"foreground": "#000000"
 			}
 		},
+		{
+			"name": "promise function invocation", 
+			"scope": [
+				"source.js meta.function.js meta.block.js meta.function-call.js support.function.promise.js"
+			],
+			"settings": {
+				"foreground": "#008888",
+				"fontStyle": "italic bold"
+			}
+		},
+		{
+			"name": "Promise class function call", 
+			"scope": [
+				"source.js meta.function.js meta.block.js meta.block.js meta.function.expression.js meta.block.js meta.function-call.js support.class.promise.js"
+			],
+			"settings": {
+				"foreground": "#008888",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "export keyword", 
+			"scope": [
+				"keyword.control.export.js"
+			],
+			"settings": {
+				"foreground": "#171717",
+			}
+		},
+		{
+			"name": "export default keyword", 
+			"scope": [
+				"source.js meta.export.default.js keyword.control.export.js",
+				"source.js meta.export.default.js keyword.control.default.js"
+			],
+			"settings": {
+				"foreground": "#171717",
+				"fontStyle": "bold"
+			}
+		},		
 		// CSS **********************************
 		{
 			"name": "Tag name in CSS file",

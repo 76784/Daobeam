@@ -12,7 +12,7 @@ There are relatively few low contrast themes in general. They are much harder to
 The Firefox (desktop) reader button (sepia setting) uses a similar (but lighter) beige background as **Daobeam**. **_Beige as a background is a thing, and a thing that works well._** If you want to look cool to your peers, use Monokai. If you want a theme that will minimize eye strain and help you code all day, use **Daobeam**.
 
 ## Supported Languages (currently)
-HTML, CSS, SCSS, JavaScript, JSON, Markdown
+ES6 (JavaScript) and below, JSON, HTML, CSS, SCSS, Markdown
 
 ## See Below the Screenshots for More Info
 
@@ -45,10 +45,17 @@ Use bold when something is more powerful than something else. Case in point: CSS
 
 In my CSS screenshots, notice how the property values are all the same color (good!). In many of the themes you see, this is not the case. As a long-time CSS developer, I want all property values to be the same color. Most themes don't have this consistency because the theme author didn't put in the time to figure out how to do it. I did.
 
-## Recommendations
-DejaVu Sans Mono for a coding font.
-
-Do View / Reset Zoom. I use a font-size of 18px on a 1920x1200 monitor. Use alt + Z to word wrap - I wish that were the VS Code default.
+## User Settings Recommendations
+```
+{
+    "window.zoomLevel": 0,
+    "editor.fontFamily": "DejaVu Sans Mono",
+    "editor.fontSize": 17,
+    "workbench.colorTheme": "Daobeam",
+    "files.autoSave": "off",
+    "editor.wordWrap": "on",
+}
+```
 
 ## License
 

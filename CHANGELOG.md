@@ -4,8 +4,14 @@ All notable changes to the "Daobeam" extension will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
-- ECMAScript 2015 (aka, ES6)
+## [1.2.0] - 2018-08-05
+### Added
+- Syntax coloring for ES6 (official name: ECMAScript 2015) added!
+
+### Changed
+- for JavaScript
+    - careful scoping of green color for function calls (example: request.open() and request.send() now matching burgandy)
+- side panel minor color tweaks
 
 ## [1.1.5] - 2018-07-03
 ### Changed

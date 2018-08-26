@@ -1,7 +1,7 @@
 # Daobeam - A low contrast, light theme, with balanced colors to minimize eye strain
 
 ## Philosophy
-Have you ever watched television in a totally dark room? That is an example of high contrast. It is hard on your eyes. It leads to eye strain. It is unhealthy.
+Have you ever watched television in a totally dark room? That is an example of high contrast. It is hard on your eyes. It leads to eye strain. It is unhealthy. **Read "The Case Against Dark Themes" section near the bottom of this README.**
 
 People like dark themes with bright foreground colors because they are eye-catching in the showroom. But most of these dark themes are very high contrast (example: Monokai). You're asking for eye strain by using themes like these. As a professional coder, I would not use a high contrast theme.
 
@@ -49,17 +49,37 @@ In my CSS screenshots, notice how the property values are all the same color (go
 ```
 {
     "window.zoomLevel": 0,
-    "editor.fontFamily": "DejaVu Sans Mono",
-    "editor.fontSize": 17,
+    "editor.fontFamily": "Consolas",
+    "editor.fontSize": 18,
     "workbench.colorTheme": "Daobeam",
     "files.autoSave": "off",
     "editor.wordWrap": "on",
 }
 ```
 
-## License
+## The Case Against Dark Themes
+Usually when one is talking about "low contrast", one is referring to the contrast of the foreground colors with respect to the background colors. But there is another area of contrast that does not get enough attention; the overall contrast of the theme itself in relation to your physical environment (the lighting of your room, the wall behind your monitor, your desk, etc.).
 
+When it comes to reducing eyestrain, this matters. If you want to know what I'm talking about, try this:
+
+1. Use a light theme for 20 minutes. Whatever you may think of that light theme, note that you are *not* thinking "whoa, that is bright".
+2. Now switch to a dark theme, and use it for 20 minutes.
+3. Now switch back to the light theme. You *will now* think "whoa, that is bright!". 
+
+Have you ever thought about *why* this is? The answer is that your eyes dialated while using the dark theme. 
+
+Not only that, when you use a dark theme in a light room, your eyes have to work to balance out the high contrast of the dark theme on the light room. The work your eyes are doing here is what is called "eyestrain".
+
+**Daobeam** is designed to blend in with the well-lit room you are working in. 
+
+If you are coding in a very dark room (and I don't recommend it), then **Daobeam** is probably not for you.
+
+But if you work in a well-lit room like I do - with both natural light, and artificial light - then try **Daobeam**.
+
+## License
 GNU General Public License v3.0
+
+## Enjoy **Daobeam**!
 
 [0]:https://www.sessions.edu/color-calculator/
 
@@ -74,5 +94,3 @@ GNU General Public License v3.0
 [5]:https://raw.githubusercontent.com/76784/Daobeam/master/screenshots/beige-usages.png
 
 [6]:https://raw.githubusercontent.com/76784/Daobeam/master/screenshots/full-editor.png
-
-## Enjoy **Daobeam**!

@@ -8,38 +8,46 @@
 		"editor.inactiveSelectionBackground": "#E5EBF1",
 		"editorIndentGuide.background": "#D3D3D3",
 		"editor.selectionHighlightBackground": "#ADD6FF4D", 
-		"editorSuggestWidget.background": "#F3F3F3",
-		"activityBarBadge.background": "#007ACC",
+		"editorSuggestWidget.background": "#F3F3F3",	
+		
+		// Sidebar
 		"sideBarTitle.foreground": "#000000",
 		"sideBarSectionHeader.foreground": "#000000",
 		"sideBar.background": "#EDEBDE",
-		"sideBar.foreground": "#000000", 
-		"list.hoverBackground": "#E0E0E0",
-		
-		"badge.background": "#666666",
+		"sideBar.foreground": "#000000",
+		"sideBar.border": "#666666",
+		"list.hoverBackground": "#E0E0E0", //in sidebar, when you hover over items		
+		"badge.background": "#666666", //shows number of changes
 		"badge.foreground": "#EDEBDE",
-		"panel.background": "#dddddd",
 
+		// Panel
+		"panel.background": "#dddddd",
 		"panelTitle.activeForeground": "#000000",
 		"panelTitle.activeBorder": "#666666",
 		"panelTitle.inactiveForeground": "#666666",
-		"panel.border": "#666666",			
-		
-		"terminal.background": "#dddddd", 
-		"terminal.foreground": "#171717",
-		"terminal.border": "#666666",
-		
-		// changed from default
-		"terminal.ansiYellow": "#838800", 
-		"terminal.ansiWhite": "#E8E8E8", 
-		"terminal.ansiBrightYellow": "#838800", 
-		"terminal.ansiBrightGreen": "#209F20", 
-		"terminal.ansiCyan": "#0074C1", 
-		
-		"sideBar.border": "#666666",
+		"panel.border": "#666666",
+
+		// Tabs
 		"tab.inactiveForeground": "#333333",
 		"tab.activeForeground": "#000000",
-		"tab.inactiveBackground": "#E0E0E0"
+		"tab.inactiveBackground": "#E0E0E0",
+		
+		// ACTIVITY BAR (far left vertical bar)
+		"activityBar.background": "#D1CAAB", //585858
+		"activityBar.foreground": "#171717",
+		"activityBarBadge.background": "#666666", // icon on icon that pops up momentarily
+		"activityBarBadge.foreground": "#EDEBDE",
+		
+		// Terminal
+		"terminal.background": "#dddddd", 
+		"terminal.foreground": "#171717",
+		"terminal.border": "#666666",		
+		// terminal colors changed from default
+		"terminal.ansiYellow": "#838800",
+		"terminal.ansiWhite": "#E8E8E8",
+		"terminal.ansiBrightYellow": "#838800",
+		"terminal.ansiBrightGreen": "#209F20",
+		"terminal.ansiCyan": "#0074C1"
 	},
 	"tokenColors": [			
 		{
@@ -48,7 +56,7 @@
 				"constant.numeric"
 			],
 			"settings": {
-				"foreground": "#000088"
+				"foreground": "#000000"
 			}
 		},
 		{

@@ -150,6 +150,16 @@
 			}
 		},
 		{
+			"name": "JavaScript `delete` keyword",
+			"scope": [
+				"source.js meta.function.expression.js meta.block.js keyword.operator.expression.delete.js"
+			],
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#000000",
+			}
+		},
+		{
 			"name": "Variable",
 			"scope": ["variable"],
 			"settings": {
@@ -165,37 +175,41 @@
 				"foreground": "#171717" //922297
 			}
 		},	
+		// ***********begin DOM ***********
 		{
-			"name": "Library function", 
+			"name": "DOM function", 
 			"scope": [
-				"source.js meta.function.js meta.block.js meta.block.js meta.function-call.js support.function.dom.js"
-				,
-				"source.js meta.function.expression.js meta.block.js meta.var.expr.js meta.function-call.js entity.name.function.js"
-				,
-				"source.js meta.function.expression.js meta.block.js meta.function.js meta.block.js meta.function-call.js entity.name.function.js"
-				,
-				"source.js meta.var.expr.js meta.function.expression.js meta.block.js meta.function-call.js support.function.dom.js"
+				"source.js meta.function-call.js support.function.dom.js"
 			],
 			"settings": {
 				"fontStyle": "italic",
 				"foreground": "#125A12"
 			}
+		},	
+		{
+			"name": "property in SpaceShip.prototype.`left`",
+			"scope": [
+				//"source.js meta.function.expression.js meta.block.js support.variable.property.dom.js",
+				"source.js support.variable.property.dom.js",
+				"source.js support.variable.dom.js"
+			],
+			"settings": {
+				"fontStyle": "bold"
+			}
 		},
+		// ***********end DOM ***********
 		{
 			"name": "`require()`", 
 			"scope": [			
 				"source.js meta.var.expr.js meta.function-call.js support.function.js"
 			],
 			"settings": {
-				//"fontStyle": "italic",
 				"foreground": "#125A12"
 			}
 		},
 		{
 			"name": "JavaScript function name at invocation",
 			"scope": [
-				"source.js meta.function.js meta.block.js new.expr.js meta.function.expression.js meta.block.js meta.function-call.js support.function.dom.js"
-				,
 				"meta.function-call.js entity.name.function.js"
 				,
 				"source.js meta.function.expression.js meta.block.js meta.var.expr.js meta.function-call.js entity.name.function.js"
@@ -271,25 +285,6 @@
 				"foreground": "#880000"
 			}
 		},	
-		{
-			"name": "property in SpaceShip.prototype.`left`",
-			"scope": [
-				"source.js meta.function.expression.js meta.block.js support.variable.property.dom.js",
-				"source.js support.variable.property.dom.js"
-			],
-			"settings": {
-				"fontStyle": "bold"
-			}
-		},
-		{
-			"name": "support.variable.property.dom.js",
-			"scope": [
-				"source.js meta.function.expression.js meta.block.js meta.function.js meta.block.js support.variable.property.dom.js"
-			],
-			"settings": {
-				"fontStyle": ""
-			}
-		},
 		{
 			"name": "JavaScript `this` variable",
 			"scope": "variable.language.this.js",

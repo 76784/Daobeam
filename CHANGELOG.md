@@ -4,6 +4,11 @@ All notable changes to the "Daobeam" extension will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.2.3] - 2018-09-1
+### Changed
+- Syntax coloring clean-up, make consistent, refactor
+    - DOM function calls green, non-DOM function calls burgundy    
+
 ## [1.2.2] - 2018-08-31
 ### Changed
 - Syntax coloring

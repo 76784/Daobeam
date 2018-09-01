@@ -52,7 +52,7 @@ In my CSS screenshots, notice how the property values are all the same color (go
     "editor.fontFamily": "Consolas",
     "editor.fontSize": 18,
     "workbench.colorTheme": "Daobeam",
-    "files.autoSave": "off",
+    "files.autoSave": "onFocusChange",
     "editor.wordWrap": "on",
 }
 ```

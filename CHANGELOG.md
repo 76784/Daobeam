@@ -4,6 +4,15 @@ All notable changes to the "Daobeam" extension will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.2.2] - 2018-08-31
+### Changed
+- Syntax coloring
+    - `require()` colored like library functions, only not italic
+    - Object literal "module" and key colored like JSON (for example, in webpack.config.js)
+    - Comments changed from #CC6600 to #BF6000, which I feel is slightly more readable
+- Change log
+    - Correction to user settings recommendations
+
 ## [1.2.1] - 2018-08-26
 ### Changed
 - Editor

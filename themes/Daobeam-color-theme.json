@@ -182,6 +182,16 @@
 			}
 		},
 		{
+			"name": "`require()`", 
+			"scope": [			
+				"source.js meta.var.expr.js meta.function-call.js support.function.js"
+			],
+			"settings": {
+				//"fontStyle": "italic",
+				"foreground": "#125A12"
+			}
+		},
+		{
 			"name": "JavaScript function name at invocation",
 			"scope": [
 				"source.js meta.function.js meta.block.js new.expr.js meta.function.expression.js meta.block.js meta.function-call.js support.function.dom.js"
@@ -421,7 +431,26 @@
 				"foreground": "#171717",
 				"fontStyle": "bold"
 			}
-		},		
+		},
+		{
+			"name": "`module.exports`", 
+			"scope": [
+				"source.js support.type.object.module.js"
+			],
+			"settings": {
+				"foreground": "#440088",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "object-literal.key", 
+			"scope": [
+				"source.js meta.objectliteral.js meta.object.member.js meta.object-literal.key.js"
+			],
+			"settings": {
+				"foreground": "#440088"
+			}
+		},
 		// CSS **********************************
 		{
 			"name": "Tag name in CSS file",

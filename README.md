@@ -14,6 +14,11 @@ The Firefox (desktop) reader button (sepia setting) uses a similar (but lighter)
 ## Supported Languages (currently)
 ES6 (JavaScript) and below, JSON, HTML, CSS, SCSS, Markdown
 
+## Low Contrast - But Not Ultra-Low Contrast
+Comments are meant to be read by human beings. So *why* is it that so many theme developers make their comments *ultra*-low contrast with the background color (thus making comments difficult to read)? In my opinion, this is misguided. Comments should be easy to read!
+
+**Daobeam** strives to have a consistent contrast across *all* foreground colors. My hope is that nothing is too high contrast, and nothing is too low contrast - including comments.
+
 ## See Below the Screenshots for More Info
 
 ## Full Editor
@@ -46,14 +51,21 @@ Use bold when something is more powerful than something else. Case in point: CSS
 In my CSS screenshots, notice how the property values are all the same color (good!). In many of the themes you see, this is not the case. As a long-time CSS developer, I want all property values to be the same color. Most themes don't have this consistency because the theme author didn't put in the time to figure out how to do it. I did.
 
 ## User Settings Recommendations
+VS Code user settings has properties to increase the font-size of the source code (`editor.fontSize`), the terminal (`terminal.integrated.fontSize`), but *not* the editor sidebar. I think it's important to be able to easily read the names of your files in the sidebar. So here is a simple workaround for this limitation: You simply increase the overall font-size of everything using `window.zoomLevel`, and then slightly *decrease* the `editor.fontSize` and `terminal.integrated.fontSize` to compensate for increasing `window.zoomLevel`:
+
 ```
 {
-    "window.zoomLevel": 0,
-    "editor.fontFamily": "Consolas",
-    "editor.fontSize": 18,
     "workbench.colorTheme": "Daobeam",
-    "files.autoSave": "onFocusChange",
+    "editor.fontFamily": "Consolas",
+    
+    //BEGIN these settings work in tandem ~~~~~~~~
+    "window.zoomLevel": 0.7, //0.7<-- keep this value in a comment, because it will be overwritten on ctrl + 0, ctrl + +, or ctrl + -.
+    "editor.fontSize": 16, //smaller than I would want it if window.zoomLevel was 0
+    "terminal.integrated.fontSize": 15, //smaller than I would want it if window.zoomLevel was 0
+    //END these values work in tandem ~~~~~~~~
+    
     "editor.wordWrap": "on",
+    "files.autoSave": "onFocusChange",
 }
 ```
 

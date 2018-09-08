@@ -4,6 +4,21 @@ All notable changes to the "Daobeam" extension will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+
+## [1.2.4] - 2018-09-8
+### Changed
+- JavaScript refinements
+    - Make DOM properties (bold) and DOM functions (italic) the same color (green). Now you know when you're working with the DOM!
+    - Make variables much more consistent in color
+    - Make string templates standard foreground color
+	- General polishing (`delete` and `this` keywords)
+    - Refactor and cleanup: remove a lot of overscoping in variables and functions
+- All languages
+    - Make comments slightly darker orange
+- README.md
+    - Added section on constrast
+    - Changed user settings (how to increase sidebar font)
+
 ## [1.2.3] - 2018-09-1
 ### Changed
 - Syntax coloring clean-up, make consistent, refactor

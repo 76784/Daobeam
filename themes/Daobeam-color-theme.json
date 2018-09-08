@@ -32,8 +32,8 @@
 		"tab.activeForeground": "#000000",
 		"tab.inactiveBackground": "#E0E0E0",
 		
-		// ACTIVITY BAR (far left vertical bar)
-		"activityBar.background": "#D1CAAB", //585858
+		// Activity Bar (far left vertical bar)
+		"activityBar.background": "#D1CAAB",
 		"activityBar.foreground": "#171717",
 		"activityBarBadge.background": "#666666", // icon on icon that pops up momentarily
 		"activityBarBadge.foreground": "#EDEBDE",
@@ -42,10 +42,10 @@
 		"terminal.background": "#dddddd", 
 		"terminal.foreground": "#171717",
 		"terminal.border": "#666666",		
-		// terminal colors changed from default
-		"terminal.ansiYellow": "#838800",
+		// terminal foreground colors changed from default:
+		"terminal.ansiYellow": "#484A00",
 		"terminal.ansiWhite": "#E8E8E8",
-		"terminal.ansiBrightYellow": "#838800",
+		"terminal.ansiBrightYellow": "#484A00",
 		"terminal.ansiBrightGreen": "#209F20",
 		"terminal.ansiCyan": "#0074C1"
 	},
@@ -56,7 +56,7 @@
 				"constant.numeric"
 			],
 			"settings": {
-				"foreground": "#000000"
+				"foreground": "#171717"
 			}
 		},
 		{
@@ -96,7 +96,7 @@
 		{
 			"scope": "comment",
 			"settings": {
-				"foreground": "#CC6600"
+				"foreground": "#B95C00" //9D4F00
 			}
 		},
 		{
@@ -152,7 +152,7 @@
 		{
 			"name": "JavaScript `delete` keyword",
 			"scope": [
-				"source.js meta.function.expression.js meta.block.js keyword.operator.expression.delete.js"
+				"keyword.operator.expression.delete.js"
 			],
 			"settings": {
 				"fontStyle": "italic",
@@ -161,25 +161,18 @@
 		},
 		{
 			"name": "Variable",
-			"scope": ["variable"],
+			"scope": [
+				"variable"
+			],
 			"settings": {
 				"foreground": "#880000"
 			}
 		}, 
-		{
-			"name": "JavaScript Variable Other Readwrite",
-			"scope": [
-				"variable.other.readwrite.js"
-			],
-			"settings": {
-				"foreground": "#171717" //922297
-			}
-		},	
 		// ***********begin DOM ***********
 		{
 			"name": "DOM function", 
 			"scope": [
-				"source.js meta.function-call.js support.function.dom.js"
+				"support.function.dom.js"
 			],
 			"settings": {
 				"fontStyle": "italic",
@@ -189,18 +182,18 @@
 		{
 			"name": "property in SpaceShip.prototype.`left`",
 			"scope": [
-				//"source.js meta.function.expression.js meta.block.js support.variable.property.dom.js",
-				"source.js support.variable.property.dom.js",
-				"source.js support.variable.dom.js"
+				"support.variable.property.dom.js",
+				"support.variable.dom.js"
 			],
 			"settings": {
-				"fontStyle": "bold"
+				"fontStyle": "bold",
+				"foreground": "#125A12"
 			}
 		},
 		// ***********end DOM ***********
 		{
 			"name": "`require()`", 
-			"scope": [			
+			"scope": [
 				"source.js meta.var.expr.js meta.function-call.js support.function.js"
 			],
 			"settings": {
@@ -208,33 +201,10 @@
 			}
 		},
 		{
-			"name": "JavaScript function name at invocation",
+			"name": "JavaScript `var`, `function`",
 			"scope": [
-				"meta.function-call.js entity.name.function.js"
-				,
-				"source.js meta.function.expression.js meta.block.js meta.var.expr.js meta.function-call.js entity.name.function.js"
-				,
-				"source.js meta.function.expression.js meta.block.js meta.function-call.js entity.name.function.js"
-				,
-				"source.js meta.function.expression.js meta.block.js meta.function.js meta.block.js meta.function-call.js support.function.js"
-				,
-				"source.js meta.function.js meta.block.js meta.function-call.js support.function.js"
-			],
-			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#880000"
-			}
-		},
-		{
-			"name": "JavaSript `var`",
-			"scope": "storage.type.js",
-			"settings": {
-				"foreground": "#000088"
-			}
-		},
-		{
-			"name": "JavaScript `function` reserved word ('function')",
-			"scope": [
+				//.... storage.type.js
+				"storage.type.js",
 				"storage.type.function.js"
 			],
 			"settings": {
@@ -242,43 +212,23 @@
 			}
 		},
 		{
-			"name": "name of function when a property of an object",
-			"scope": [
-				"source.js meta.function.expression.js meta.block.js meta.var.expr.js meta.objectliteral.js meta.object.member.js meta.object-literal.key.js entity.name.function.js",
-				"source.js meta.function.expression.js meta.block.js meta.function.js meta.block.js meta.objectliteral.js meta.object.member.js meta.object-literal.key.js entity.name.function.js"
-			],
-			"settings": {
-				"foreground": "#880000"
-			}
-		},	
-		{
 			"name": "function names",
 			"scope": [
-				//JavaScript function variable name
-				 "source.js meta.function.expression.js meta.block.js meta.function.js meta.definition.function.js entity.name.function.js",
-				//function `Name`				
-				"meta.function.js meta.definition.function.js entity.name.function.js",
-				//var `nameOfFunction`
-				"meta.var-single-variable.expr.js meta.definition.variable.js entity.name.function.js",
-				//Scene.prototype.`register`
-				"source.js meta.function.expression.js meta.block.js entity.name.function.js",
-				"source.js entity.name.function.js",
+				"entity.name.function.js"
+				,
 				//JavaScript Type (new `TypeName`)
-				"entity.name.type.js",
-				//MYAPP` in var MYAPP = {}				
-				"variable.other.constant.js",
-				"variable.other.constant.object.js",
-				//object created by DOM function				
-				// "meta.block.js meta.block.js meta.function-call.js variable.other.object.js",
+				"entity.name.type.js"
+				,
+				//MYAPP` in var MYAPP = {}		
+				"variable.other.constant.js"
+				,
+				"variable.other.constant.object.js"
+				,
 				//`console`.log
-				"support.class.console.js",
-				//`User` in User.prototype.toString				
-				"source.js support.class.js",
-				//"source.js variable.other.object.js",
-				"source.js meta.function.expression.js meta.block.js support.class.js",
-				"source.js meta.function.expression.js meta.block.js meta.var.expr.js new.expr.js entity.name.type.js"
-				//,
-				//"source.js meta.function.expression.js meta.block.js meta.function.js meta.block.js variable.other.object.js"
+				"support.class.console.js"
+				,
+				//`User` in User.prototype.toString
+				"support.class.js"
 			],
 			"settings": {
 				"fontStyle": "bold",
@@ -286,16 +236,52 @@
 			}
 		},	
 		{
-			"name": "JavaScript `this` variable",
-			"scope": "variable.language.this.js",
+			"name": "JavaScript function name at invocation",
+			"scope": [
+				"meta.function-call.js entity.name.function.js"
+				,
+				"meta.function-call.js support.function.js"
+			],
 			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#880000"
+			}
+		},
+		{
+			"name": "name of function when a property of an object",
+			"scope": [
+				"meta.object-literal.key.js entity.name.function.js"
+			],
+			"settings": {
+				"foreground": "#880000"
+			}
+		},	
+		{
+			"name": "`Array`.prototype",
+			"scope": [
+				"support.class.builtin.js",
+				"support.constant.math.js"
+			],
+			"settings": {
+				"fontStyle": "italic bold",
+				"foreground": "#880000"
+			}
+		},
+		{
+			"name": "JavaScript new keyword (`new` TypeName)",
+			"scope": [
+				"keyword.operator.new.js"
+			],
+			"settings": {
+				"fontStyle": "italic",
 				"foreground": "#000000"
 			}
 		},
 		{
-			"name": "this.`context` = blah",
-			"scope": "variable.other.property.js",
+			"name": "JavaScript `this` variable",
+			"scope": "variable.language.this.js",
 			"settings": {
+				"fontStyle": "italic",
 				"foreground": "#171717"
 			}
 		},
@@ -309,45 +295,26 @@
 		{
 			"name": "variable names", 
 			"scope": [
-				//`xml` in xml.async = false
-				"source.js meta.var.expr.js meta.function.expression.js meta.block.js meta.block.js meta.block.js meta.function-call.js variable.other.object.js",
-				"source.js meta.var.expr.js meta.function.expression.js meta.block.js meta.block.js meta.block.js variable.other.object.js",
-				//"source.js meta.function.expression.js meta.block.js meta.function-call.js variable.other.object.js",
-
-				"source.js meta.var.expr.js meta.function.expression.js meta.block.js meta.block.js meta.block.js variable.other.readwrite.js",
-				"source.js meta.var.expr.js meta.function.expression.js meta.block.js meta.block.js variable.other.readwrite.js",
-				"source.js meta.var.expr.js meta.function.expression.js meta.block.js meta.var.expr.js meta.var-single-variable.expr.js meta.definition.variable.js variable.other.readwrite.js",
-				"source.js meta.var.expr.js meta.function.expression.js meta.block.js variable.other.readwrite.js",
-				//"source.js meta.function.js meta.block.js variable.other.readwrite.js",
-				"source.js meta.function.expression.js meta.block.js meta.var.expr.js meta.var-single-variable.expr.js meta.definition.variable.js variable.other.readwrite.js",
-				"source.js meta.var.expr.js meta.var-single-variable.expr.js meta.definition.variable.js variable.other.readwrite.js",
-				
-				"source.js meta.function.js meta.block.js support.variable.property.dom.js",
-				"source.js meta.function.js meta.block.js variable.other.property.js"
+				"variable.other.readwrite.js"				
+				,
+				"variable.other.property.js"
+				,
+				"variable.other.object.js"
 			],
 			"settings": {
 				"foreground": "#922297"
 			}
 		},
 		{
-			"name": "`Object` in Object.getPrototypeOf(u)", 
+			"name": "visited[`name`] = member;", 
 			"scope": [
-				"source.js meta.function.expression.js meta.block.js meta.function-call.js support.class.builtin.js"
+				"source.js meta.function.js meta.block.js meta.block.js meta.array.literal.js variable.other.readwrite.js"
 			],
 			"settings": {
-				"fontStyle": "bold"
+				"foreground": "#000000"
 			}
 		},
-		{
-			"name": "meta.brace.square.js", 
-			"scope": [
-				"source.js meta.function.expression.js meta.block.js meta.var.expr.js meta.objectliteral.js meta.object.member.js meta.array.literal.js meta.brace.square.js"
-			],
-			"settings": {
-				"foreground": "#007ACC"
-			}
-		},
-		// ECMAScript 6 **********************************,
+		// ECMAScript 6 **********************************
 		{
 			"name": "`class` reserved word", 
 			"scope": [
@@ -390,7 +357,7 @@
 		{
 			"name": "promise function invocation", 
 			"scope": [
-				"source.js meta.function.js meta.block.js meta.function-call.js support.function.promise.js"
+				"support.function.promise.js"
 			],
 			"settings": {
 				"foreground": "#008888",
@@ -400,7 +367,7 @@
 		{
 			"name": "Promise class function call", 
 			"scope": [
-				"source.js meta.function.js meta.block.js meta.block.js meta.function.expression.js meta.block.js meta.function-call.js support.class.promise.js"
+				"support.class.promise.js"
 			],
 			"settings": {
 				"foreground": "#008888",
@@ -444,6 +411,16 @@
 			],
 			"settings": {
 				"foreground": "#440088"
+			}
+		},
+		// JavaScript string template **********************************
+		{
+			"name": "JavaScript string template", 
+			"scope": [
+				"source.js meta.function.js meta.block.js meta.var.expr.js string.template.js"
+			],
+			"settings": {
+				"foreground": "#171717"
 			}
 		},
 		// CSS **********************************
@@ -581,7 +558,7 @@
 				"fontStyle": "italic"
 			}
 		},
-		// Markdown
+		// Markdown ***********************
 		{
 			"name": "## Heading",
 			"scope": [

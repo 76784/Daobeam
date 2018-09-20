@@ -11,8 +11,11 @@ There are relatively few low contrast themes in general. They are much harder to
 
 The Firefox (desktop) reader button (sepia setting) uses a similar (but lighter) beige background as **Daobeam**. **_Beige as a background is a thing, and a thing that works well._** If you want to look cool to your peers, use Monokai. If you want a theme that will minimize eye strain and help you code all day, use **Daobeam**.
 
-## Supported Languages (currently)
+## Supported Languages
+Polished support for:
 ES6 (JavaScript) and below, JSON, HTML, CSS, SCSS, Markdown
+
+General support for most other languages, based on the colors used for JavaScript.
 
 ## Low Contrast - But Not Ultra-Low Contrast
 Comments are meant to be read by human beings. So *why* is it that so many theme developers make their comments *ultra*-low contrast with the background color (thus making comments difficult to read)? In my opinion, this is misguided. Comments should be easy to read!
@@ -25,6 +28,7 @@ Comments are meant to be read by human beings. So *why* is it that so many theme
 !["Full Editor Screenshot"][6]
 
 ## JavaScript
+Notice how `window`, `document`, and `getElementsByTagName()` are all green. This is because they are all members of the DOM - an example of the thought put into the foreground colors:
 !["JavaScript Screenshot"][1]
 
 ## CSS (note error shown)
@@ -62,7 +66,7 @@ VS Code user settings has properties to increase the font-size of the source cod
     "window.zoomLevel": 0.7, //0.7<-- keep this value in a comment, because it will be overwritten on ctrl + 0, ctrl + +, or ctrl + -.
     "editor.fontSize": 16, //smaller than I would want it if window.zoomLevel was 0
     "terminal.integrated.fontSize": 15, //smaller than I would want it if window.zoomLevel was 0
-    //END these values work in tandem ~~~~~~~~
+    //END these settings work in tandem ~~~~~~~~
     
     "editor.wordWrap": "on",
     "files.autoSave": "onFocusChange",

@@ -5,10 +5,15 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 
+## [1.3.1] - 2018-09-20
+### Changed
+- Tweaks to undo a few inadvertent changes to JavaScript coloring
+
 ## [1.3.0] - 2018-09-19
 ### Added
 - General language support
     - I have taken the JavaScript coloring and added a section with general scoping. This should make most languages look decent.
+
 ### Changed
 - JavaScript refinements
     - Make violet consistent, and based on current purple and burgundy.

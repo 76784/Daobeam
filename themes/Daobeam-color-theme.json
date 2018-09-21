@@ -359,6 +359,28 @@
 			}
 		},
 		// END general styles ******************
+		// xxxxxxxxxxxxxxxxxxxxxxx BEGIN override general styles for JS xxxxxxxxxxxxxxxxxxxxxxx
+		{
+			"name": "console.`log`", 
+			"scope": [
+				"support.function.console.js"
+			],
+			"settings": {
+				"foreground": "#171717",
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "`class` reserved word", 
+			"scope": [
+				"support.class.component.js"
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#000088"
+			}
+		},
+		// xxxxxxxxxxxxxxxxxxxxxxx BEGIN override general styles for JS xxxxxxxxxxxxxxxxxxxxxxx		
 		// BEGIN C# ******************
 		{
 			"name": "xml tags", 
@@ -434,15 +456,7 @@
 		},
 		// END JSON ****************************
 		// BEGIN JavaScript ************************************
-		{
-			"name": "`require()`", 
-			"scope": [
-				"source.js meta.var.expr.js meta.function-call.js support.function.js"
-			],
-			"settings": {
-				"foreground": "#005800"
-			}
-		},
+		
 		{
 			"name": "JavaScript `var`, `function`",
 			"scope": [
@@ -490,6 +504,18 @@
 				"foreground": "#880000"
 			}
 		},
+		// BEGIN must come after above
+		{
+			"name": "`require()`", 
+			"scope": [
+				"source.js meta.var.expr.js meta.function-call.js support.function.js"
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#005800"
+			}
+		},
+		// END must come after above
 		{
 			"name": "name of function when a property of an object",
 			"scope": [
@@ -627,6 +653,7 @@
 				"keyword.control.export.js"
 			],
 			"settings": {
+				"fontStyle": "",
 				"foreground": "#171717",
 			}
 		},

@@ -44,6 +44,8 @@
 		"terminal.ansiBrightYellow": "#B95C00"
 		,
 		"terminalCursor.foreground": "#ADADAD"
+		,
+		"terminal.ansiGreen": "#005800"
 		
 	},
 	"tokenColors": [			
@@ -168,7 +170,7 @@
 				"support.function"
 			],
 			"settings": {
-				"foreground": "#005800"
+				"foreground": "#171717"
 			}
 		},
 		{
@@ -214,7 +216,7 @@
 				"support.function"
 			],
 			"settings": {
-				"fontStyle": "italic",
+				"fontStyle": "",
 				"foreground": "#880000"
 			}
 		},
@@ -234,18 +236,18 @@
 				"support.constant.math"
 			],
 			"settings": {
-				"fontStyle": "italic bold",
-				"foreground": "#880000"
+				"fontStyle": "bold",
+				"foreground": "#171717"
 			}
 		},
 		{
-			"name": "JavaScript new keyword (`new` TypeName)",
+			"name": "new keyword (`new` TypeName)",
 			"scope": [
 				"keyword.operator.new"
 			],
 			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#000000"
+				"fontStyle": "",
+				"foreground": "#171717"
 			}
 		},
 		{
@@ -283,10 +285,10 @@
 		{
 			"name": "visited[`name`] = member;", 
 			"scope": [
-				"variable.other.readwrite"
+				"meta.array.literal variable.other.readwrite"
 			],
 			"settings": {
-				"foreground": "#000000"
+				"foreground": "#171717"
 			}
 		},
 		{
@@ -325,7 +327,7 @@
 				"entity.name.type.module"
 			],
 			"settings": {
-				"foreground": "#000000"
+				"foreground": "#171717"
 			}
 		},
 		{
@@ -345,7 +347,7 @@
 				"support.type.object.module"
 			],
 			"settings": {
-				"foreground": "#440088",
+				"foreground": "#000088",
 				"fontStyle": "bold"
 			}
 		},
@@ -355,7 +357,7 @@
 				"meta.object-literal.key"
 			],
 			"settings": {
-				"foreground": "#440088"
+				"foreground": "#000088"
 			}
 		},
 		// END general styles ******************
@@ -397,7 +399,7 @@
 				"entity.name.variable.local.cs"
 			],
 			"settings": {
-				"foreground": "#922297"
+				"foreground": "#880088"
 			}
 		},
 		// END C# ******************
@@ -428,7 +430,6 @@
 				"support.function.dom.js"
 			],
 			"settings": {
-				"fontStyle": "italic",
 				"foreground": "#005800"
 			}
 		},	
@@ -451,7 +452,7 @@
 				"support.type.property-name.json"
 			],
 			"settings": {
-				"foreground": "#440088"
+				"foreground": "#000088"
 			}
 		},
 		// END JSON ****************************
@@ -500,7 +501,7 @@
 				"meta.function-call.js support.function.js"
 			],
 			"settings": {
-				"fontStyle": "italic",
+				"fontStyle": "",
 				"foreground": "#880000"
 			}
 		},
@@ -512,7 +513,7 @@
 			],
 			"settings": {
 				"fontStyle": "",
-				"foreground": "#005800"
+				"foreground": "#171717"
 			}
 		},
 		// END must come after above
@@ -532,8 +533,8 @@
 				"support.constant.math.js"
 			],
 			"settings": {
-				"fontStyle": "italic bold",
-				"foreground": "#880000"
+				"fontStyle": "bold",
+				"foreground": "#171717"
 			}
 		},
 		{
@@ -542,8 +543,8 @@
 				"keyword.operator.new.js"
 			],
 			"settings": {
-				"fontStyle": "italic",
-				"foreground": "#000000"
+				"fontStyle": "",
+				"foreground": "#171717"
 			}
 		},
 		{
@@ -581,10 +582,10 @@
 		{
 			"name": "visited[`name`] = member;", 
 			"scope": [
-				"source.js meta.function.js meta.block.js meta.block.js meta.array.literal.js variable.other.readwrite.js"
+				"meta.array.literal.js variable.other.readwrite.js"
 			],
 			"settings": {
-				"foreground": "#000000"
+				"foreground": "#171717"
 			}
 		},
 		// ~~~~~~~~~~~~~~~~~~~~~~~~ ECMAScript 6
@@ -624,7 +625,7 @@
 				"source.js meta.class.js entity.name.type.module.js"
 			],
 			"settings": {
-				"foreground": "#000000"
+				"foreground": "#171717"
 			}
 		},
 		{
@@ -674,7 +675,7 @@
 				"source.js support.type.object.module.js"
 			],
 			"settings": {
-				"foreground": "#440088",
+				"foreground": "#000088",
 				"fontStyle": "bold"
 			}
 		},
@@ -684,7 +685,7 @@
 				"source.js meta.objectliteral.js meta.object.member.js meta.object-literal.key.js"
 			],
 			"settings": {
-				"foreground": "#440088"
+				"foreground": "#000088"
 			}
 		},
 		// JavaScript string template **********************************
@@ -698,6 +699,28 @@
 			}
 		},
 		// END JavaScript ************************************
+		// BEGIN jsdoc ************************************
+		{
+			"name": "jsdoc", 
+			"scope": [
+				"entity.name.type.instance.jsdoc"
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#B95C00"
+			}
+		},
+		{
+			"name": "jsdoc", 
+			"scope": [
+				"comment.block.documentation.js storage.type.class.jsdoc"
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#B95C00"
+			}
+		},		
+		// END jsdoc ************************************
 		// BEGIN CSS ************************************
 		{
 			"name": "Tag name in CSS file",
@@ -804,7 +827,7 @@
 			],
 			"settings": {
 				"fontStyle": "bold",
-				"foreground": "#880000"
+				"foreground": "#171717"
 			}
 		},
 		// END CSS ************************************
@@ -904,7 +927,7 @@
 				"text.html.markdown markup.raw.block.markdown"
 			],
 			"settings": {
-				"foreground": "#922297" //922297
+				"foreground": "#880088"
 			}
 		},
 		{
@@ -914,7 +937,7 @@
 				"text.html.markdown markup.list.numbered.markdown beginning.punctuation.definition.list.markdown"
 			],
 			"settings": {
-				"foreground": "#922297"
+				"foreground": "#880088"
 			}
 		},
 		{
@@ -924,7 +947,7 @@
 				"text.html.markdown markup.list.unnumbered.markdown meta.paragraph.markdown"
 			],
 			"settings": {
-				"foreground": "#922297"
+				"foreground": "#880088"
 			}
 		},
 		{

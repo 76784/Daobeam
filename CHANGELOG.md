@@ -5,6 +5,21 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 
+## [1.3.2] - 2018-10-02
+### Changed
+- Most significant change: remove italic from function invocations. After coding for awhile with all the italic font, I thought it was too much. Goal: keep it simple.
+
+### Refined
+- Remove green font from non-DOM-related code. Support functions like `require` are now standard foreground color.
+- `new` keyword now non-italic.
+- Make purple consistent color, make green consistent color.
+- Overall simplification; remove black in favor of standard very dark gray.
+- Better scoping.
+- Terminal green now standard foreground green from editor.
+
+### Added
+- Beginning of JSDoc section (comments in code).
+
 ## [1.3.1] - 2018-09-20
 ### Changed
 - Tweaks to undo a few inadvertent changes to JavaScript coloring

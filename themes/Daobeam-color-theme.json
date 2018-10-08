@@ -114,7 +114,7 @@
 		{
 			"scope": "string",
 			"settings": {
-				"foreground": "#882200"
+				"foreground": "#880000" //6f1616
 			}
 		},
 		{
@@ -123,7 +123,7 @@
 				"constant.regexp"
 			],
 			"settings": {
-				"foreground": "#880044"
+				"foreground": "#880000"
 			}
 		},
 		{
@@ -382,7 +382,7 @@
 				"foreground": "#000088"
 			}
 		},
-		// xxxxxxxxxxxxxxxxxxxxxxx BEGIN override general styles for JS xxxxxxxxxxxxxxxxxxxxxxx		
+		// xxxxxxxxxxxxxxxxxxxxxxx END override general styles for JS xxxxxxxxxxxxxxxxxxxxxxx		
 		// BEGIN C# ******************
 		{
 			"name": "xml tags", 
@@ -688,7 +688,7 @@
 				"foreground": "#000088"
 			}
 		},
-		// JavaScript string template **********************************
+		// JavaScript string template ~~~~~~~~~~~
 		{
 			"name": "JavaScript string template", 
 			"scope": [

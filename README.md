@@ -92,6 +92,11 @@ If you are coding in a very dark room (and I don't recommend it), then **Daobeam
 
 But if you work in a well-lit room like I do - with both natural light, and artificial light - then try **Daobeam**.
 
+## Open to Pull Requests and Feedback
+If you would like to contribute highlighting support for other languages, I am open to pull requests. I would like to see polished support for many other languages, particularly back-end languages.
+
+And if you like the theme, please review it. I'm always open to constructive feedback.
+
 ## License
 GNU General Public License v3.0
 

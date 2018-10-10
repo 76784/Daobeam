@@ -34,12 +34,6 @@ Notice how `window`, `document`, and `getElementsByTagName()` are all green. Thi
 ## CSS (note error shown)
 !["CSS Screenshot"][2]
 
-## HTML
-!["HTML Screenshot"][3]
-
-## JSON (note error shown)
-!["JSON Screenshot"][4]
-
 ## Comparison of Biege Background Colors
 Here is a comparison of several usages of beige as a background color. Whether you're reading a book for hours, or writing code for hours, beige as a background can help reduce eyestrain. **Notice how bright the VS Code theme "Solarized-light" is in comparison to Daobeam.**
 
@@ -107,10 +101,6 @@ GNU General Public License v3.0
 [1]:https://raw.githubusercontent.com/76784/Daobeam/master/screenshots/javascript.png
 
 [2]:https://raw.githubusercontent.com/76784/Daobeam/master/screenshots/css.png
-
-[3]:https://raw.githubusercontent.com/76784/Daobeam/master/screenshots/html.png
-
-[4]:https://raw.githubusercontent.com/76784/Daobeam/master/screenshots/json.png
 
 [5]:https://raw.githubusercontent.com/76784/Daobeam/master/screenshots/beige-usages.png
 

@@ -55,7 +55,7 @@
 				"constant.numeric"
 			],
 			"settings": {
-				"foreground": "#171717"
+				"foreground": "#0074C1"
 			}
 		},
 		{
@@ -256,7 +256,7 @@
 				"variable.language.this"
 			],
 			"settings": {
-				"fontStyle": "italic",
+				"fontStyle": "bold",
 				"foreground": "#171717"
 			}
 		},
@@ -357,7 +357,7 @@
 				"meta.object-literal.key"
 			],
 			"settings": {
-				"foreground": "#000088"
+				"foreground": "#171717"
 			}
 		},
 		// END general styles ******************
@@ -502,7 +502,7 @@
 			],
 			"settings": {
 				"fontStyle": "",
-				"foreground": "#880000"
+				"foreground": "#171717"
 			}
 		},
 		// BEGIN must come after above
@@ -553,7 +553,7 @@
 				"variable.language.this.js"
 			],
 			"settings": {
-				"fontStyle": "italic",
+				"fontStyle": "bold",
 				"foreground": "#171717"
 			}
 		},
@@ -682,10 +682,10 @@
 		{
 			"name": "object-literal.key", 
 			"scope": [
-				"source.js meta.objectliteral.js meta.object.member.js meta.object-literal.key.js"
+				"meta.object-literal.key.js"
 			],
 			"settings": {
-				"foreground": "#000088"
+				"foreground": "#171717"
 			}
 		},
 		// JavaScript string template ~~~~~~~~~~~

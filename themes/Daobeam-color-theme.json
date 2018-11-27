@@ -20,6 +20,14 @@
 		"badge.background": "#666666", //shows number of changes
 		"badge.foreground": "#EDEBDE",
 
+		"gitDecoration.ignoredResourceForeground": "#000088",
+		"gitDecoration.addedResourceForeground": "#0074C1",
+		"gitDecoration.conflictingResourceForeground": "#cc0000",
+		"gitDecoration.deletedResourceForeground": "#880088",
+		"gitDecoration.modifiedResourceForeground": "#880000",
+		"gitDecoration.untrackedResourceForeground": "#B95C00",
+		"gitDecoration.submoduleResourceForeground": "#666666",
+
 		// Panel
 		"panel.background": "#dddddd",
 		"panelTitle.activeForeground": "#000000",
@@ -400,6 +408,45 @@
 			],
 			"settings": {
 				"foreground": "#880088"
+			}
+		},
+		{
+			"name": "`public` reserved word", 
+			"scope": [
+				"storage.modifier.cs"
+			],
+			"settings": {
+				"foreground": "#171717"
+			}
+		},
+		{
+			"name": "name.function.cs", 
+			"scope": [
+				"entity.name.function.cs"
+			],
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#880000"
+			}
+		},
+		{
+			"name": "namespace", 
+			"scope": [
+				"entity.name.type.namespace.cs"
+			],
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#171717"
+			}
+		},
+		{
+			"name": "keyword.type.cs", 
+			"scope": [
+				"keyword.type.cs"
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#000088"
 			}
 		},
 		// END C# ******************

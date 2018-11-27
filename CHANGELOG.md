@@ -4,6 +4,11 @@ All notable changes to the "Daobeam" extension will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.3.5] - 2018-11-26
+### Added
+- sidebar foreground colors for Git
+- _very_ beginnings of C# support
+
 ## [1.3.4] - 2018-10-09
 ### Changed
 - Most significant change: I found that I was hardly using my default foreground color, and I think using the default foreground color for function invocations and object properties works well. A function invocation is a very common thing, and shouldn't need to be called out. Goal: Don't be overly granular, and keep it simple.

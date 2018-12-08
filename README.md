@@ -9,7 +9,7 @@ There are relatively few low contrast themes in general. They are much harder to
 
 **Daobeam** is designed to be low contrast and balanced in it's coloring. 
 
-The Firefox (desktop) reader button (sepia setting) uses a similar (but lighter) beige background as **Daobeam**. **_Beige as a background is a thing, and a thing that works well._** If you want to look cool to your peers, use Monokai. If you want a theme that will minimize eye strain and help you code all day, use **Daobeam**.
+The Firefox (desktop) reader button (sepia setting) uses a similar (but lighter) beige background as **Daobeam**. ***Beige as a background is a thing, and a thing that works well.*** If you want to look cool to your peers, use Monokai. If you want a theme that will minimize eye strain and help you code all day, use **Daobeam**.
 
 ## Supported Languages
 Polished support for:

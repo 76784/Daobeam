@@ -8,8 +8,7 @@
 		"editor.inactiveSelectionBackground": "#E5EBF1",
 		"editorIndentGuide.background": "#D3D3D3",
 		"editor.selectionHighlightBackground": "#ADD6FF4D", 
-		"editorSuggestWidget.background": "#F3F3F3",	
-		
+		"editorSuggestWidget.background": "#F3F3F3",
 		// Sidebar
 		"sideBarTitle.foreground": "#000000",
 		"sideBarSectionHeader.foreground": "#000000",
@@ -19,7 +18,7 @@
 		"list.hoverBackground": "#E0E0E0", //in sidebar, when you hover over items		
 		"badge.background": "#666666", //shows number of changes
 		"badge.foreground": "#EDEBDE",
-
+		// Git
 		"gitDecoration.ignoredResourceForeground": "#000088",
 		"gitDecoration.addedResourceForeground": "#0074C1",
 		"gitDecoration.conflictingResourceForeground": "#cc0000",
@@ -27,36 +26,40 @@
 		"gitDecoration.modifiedResourceForeground": "#880000",
 		"gitDecoration.untrackedResourceForeground": "#B95C00",
 		"gitDecoration.submoduleResourceForeground": "#666666",
-
 		// Panel
 		"panel.background": "#dddddd",
 		"panelTitle.activeForeground": "#000000",
 		"panelTitle.activeBorder": "#666666",
 		"panelTitle.inactiveForeground": "#666666",
 		"panel.border": "#666666",
-
 		// Tabs
 		"tab.inactiveForeground": "#333333",
 		"tab.activeForeground": "#000000",
-		"tab.inactiveBackground": "#E0E0E0",
-		
+		"tab.inactiveBackground": "#E0E0E0",		
 		// Activity Bar (far left vertical bar)
 		"activityBar.background": "#D1CAAB",
 		"activityBar.foreground": "#171717",
 		"activityBarBadge.background": "#666666", // icon on icon that pops up momentarily
-		"activityBarBadge.foreground": "#EDEBDE"
-		,
+		"activityBarBadge.foreground": "#EDEBDE",
 		// Terminal
-		"terminal.border": "#666666"
-		,
-		"terminal.ansiBrightYellow": "#B95C00"
-		,
-		"terminalCursor.foreground": "#ADADAD"
-		,
-		"terminal.ansiGreen": "#005800"
-		
+		"terminal.border": "#666666",
+		"terminal.ansiBrightYellow": "#B95C00",
+		"terminalCursor.foreground": "#ADADAD",
+		"terminal.ansiGreen": "#005800",
+		"terminal.ansiBrightGreen": "#009100"		
 	},
-	"tokenColors": [			
+	"tokenColors": [				
+		// BEGIN Assembly ******************		
+		{
+			"name": "Assembly constant",
+			"scope": [
+				"source.asm.x86_64 constant.language.registers.general-purpose"
+			],
+			"settings": {
+				"fontStyle": "",
+			}
+		},
+		// END Assembly ******************
 		{
 			"name": "Numeric constant",
 			"scope": [
@@ -103,7 +106,7 @@
 		{
 			"scope": "comment",
 			"settings": {
-				"foreground": "#B95C00" //9D4F00
+				"foreground": "#B95C00"
 			}
 		},
 		{
@@ -122,7 +125,7 @@
 		{
 			"scope": "string",
 			"settings": {
-				"foreground": "#880000" //6f1616
+				"foreground": "#880000"
 			}
 		},
 		{
@@ -132,6 +135,25 @@
 			],
 			"settings": {
 				"foreground": "#880000"
+			}
+		},
+		{
+			"scope": [
+				"string.regexp.js punctuation.definition.string.begin.js",
+				"string.regexp.js punctuation.definition.string.end.js"
+			],
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#0074C1"
+			}
+		},
+		{
+			"scope": [
+				"string.regexp.js keyword.operator.quantifier.regexp"
+			],
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#171717"
 			}
 		},
 		{
@@ -280,9 +302,7 @@
 		{
 			"name": "variable names", 
 			"scope": [
-				"variable.other.readwrite"				
-				,
-				"variable.other.property"
+				"variable.other.readwrite"	
 				,
 				"variable.other.object"
 			],
@@ -290,6 +310,15 @@
 				"foreground": "#880088"
 			}
 		},
+		{
+			"name": "variable.other.property", 
+			"scope": [
+				"variable.other.property"
+			],
+			"settings": {
+				"foreground": "#171717"
+			}
+		},		
 		{
 			"name": "visited[`name`] = member;", 
 			"scope": [
@@ -503,8 +532,7 @@
 			}
 		},
 		// END JSON ****************************
-		// BEGIN JavaScript ************************************
-		
+		// BEGIN JavaScript ************************************		
 		{
 			"name": "JavaScript `var`, `function`",
 			"scope": [
@@ -616,14 +644,21 @@
 		{
 			"name": "variable names", 
 			"scope": [
-				"variable.other.readwrite.js"				
-				,
-				"variable.other.property.js"
+				"variable.other.readwrite.js"	
 				,
 				"variable.other.object.js"
 			],
 			"settings": {
 				"foreground": "#880088" //7D1D83
+			}
+		},
+		{
+			"name": "variable.other.property.js", 
+			"scope": [
+				"variable.other.property.js"
+			],
+			"settings": {
+				"foreground": "#171717" //7D1D83
 			}
 		},
 		{

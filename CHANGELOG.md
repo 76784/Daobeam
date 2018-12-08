@@ -4,6 +4,14 @@ All notable changes to the "Daobeam" extension will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.3.6] - 2018-12-07
+### Added
+- And now for something completely different... a minor tweak to x86_64 Assembly language (you will need use an extension like "x86 and x86_64 Assembly"): Removed italic for constant. 
+
+### Changed
+- JavaScript property from violet to default gray (object remains violet)
+- JavaScript regular expression colors
+
 ## [1.3.5] - 2018-11-26
 ### Added
 - sidebar foreground colors for Git

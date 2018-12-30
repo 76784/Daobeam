@@ -4,6 +4,18 @@ All notable changes to the "Daobeam" extension will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.3.7] - 2018-12-30
+### Changed
+- JavaScript
+    - `constant` violet, normal font to match `let` name
+- Editor refinements (sidebar mainly)
+- Markdown
+    - Use default foreground color (instead of violet) for paragraph, numbered, unnumbered lists (for the main stuff).
+- New icon
+
+### Added
+- Minor styling for Python and Bash
+
 ## [1.3.6] - 2018-12-07
 ### Added
 - And now for something completely different... a minor tweak to x86_64 Assembly language (you will need use an extension like "x86 and x86_64 Assembly"): Removed italic for constant. 

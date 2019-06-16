@@ -4,6 +4,13 @@ All notable changes to the "Daobeam" extension will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.3.8] - 2019-6-16
+### Changed
+- JavaScript
+    - The VS Code team removed the DOM scope. This means that my coloring of DOM members no longer works. There is a workaround, but it would take more than my current available time.
+- Editor
+    - Border for current line from white to dark beige
+
 ## [1.3.7] - 2018-12-30
 ### Changed
 - JavaScript

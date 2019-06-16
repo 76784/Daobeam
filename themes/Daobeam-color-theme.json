@@ -12,6 +12,7 @@
         "editorGroupHeader.tabsBackground": "#D3D3D3",
         "editor.background": "#E0DBC7",
         "editor.foreground": "#171717",
+        "editor.lineHighlightBorder": "#D1CAAB",
         "editorLineNumber.foreground": "#666666",
         "editor.inactiveSelectionBackground": "#E5EBF1",
         "editorIndentGuide.background": "#D3D3D3",
@@ -565,28 +566,6 @@
         ],
         "settings": {
             "foreground": "#880000"
-        }
-    }
-	,
-	{
-        "name": "DOM function",
-        "scope": [
-            "support.function.dom.js"
-        ],
-        "settings": {
-            "foreground": "#005800"
-        }
-    }
-	,
-	{
-        "name": "property in SpaceShip.prototype.`left`, and `window`",
-        "scope": [
-            "support.variable.property.dom.js",
-            "support.variable.dom.js"
-        ],
-        "settings": {
-            "fontStyle": "bold",
-            "foreground": "#005800"
         }
     }
 	,

@@ -16,7 +16,9 @@ While **Daobeam** is a light theme, it is in no way meant to be a *bright* theme
 ## About **Daobeam**
 All colors are meant to compliment each other. For example, #880000 (burgundy) and #000088 (purple) [are tetradic harmonized colors][0].
 
-JavaScript: `window`, `document`, and `getElementsByTagName()` - all members of the DOM - are all green; an example of the thought put into the foreground colors.
+~~JavaScript: `window`, `document`, and `getElementsByTagName()` - all members of the DOM - are all green; an example of the thought put into the foreground colors.~~
+
+The VS Code team has unfortunately removed the DOM scope. This means that my coloring of DOM members no longer works. There is a workaround, but it would take more than my current available time.
 
 CSS: Property values are all the same color (good!).
 

@@ -844,20 +844,18 @@
     }
 	,
 	{
-        "name": "jsdoc",
+        "name": "jsdoc", 
         "scope": [
-            "entity.name.type.instance.jsdoc"
-        ],
-        "settings": {
-            "fontStyle": "",
-            "foreground": "#B95C00"
-        }
-    }
-	,
-	{
-        "name": "jsdoc",
-        "scope": [
-            "comment.block.documentation.js storage.type.class.jsdoc"
+            "entity.name.type.instance.jsdoc",
+            "comment.block.documentation.js storage.type.class.jsdoc",
+            "comment.block.documentation.js variable.other.object.tsx",
+            "comment.block.documentation.js variable.other.readwrite.tsx",
+            "comment.block.documentation.js variable.other.property.tsx",
+            "comment.block.documentation.js variable.other.jsdoc",
+            "comment.block.documentation.js entity.name.function.tsx",
+            "comment.block.documentation.js string.quoted.single.tsx",
+            "comment.block.documentation.js string.quoted.double.tsx",
+            "comment.block.documentation.js punctuation.separator.key-value.tsx"
         ],
         "settings": {
             "fontStyle": "",

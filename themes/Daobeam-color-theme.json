@@ -101,9 +101,20 @@
     }
 	,
 	{
+        "name": "comment",
         "scope": "comment",
         "settings": {
-            "foreground": "#B95C00"
+            "foreground": "#000000",
+            "fontStyle": ""
+        }
+    }    
+	,
+	{
+        "name": "HTML comment",
+        "scope": "comment.block.html",
+        "settings": {
+            "foreground": "#000000",
+            "fontStyle": "italic"
         }
     }
 	,
@@ -846,7 +857,8 @@
 	{
         "name": "jsdoc", 
         "scope": [
-            "entity.name.type.instance.jsdoc",
+            "comment.block.documentation.js",
+            "comment.block.documentation.js entity.name.type.instance.jsdoc",
             "comment.block.documentation.js storage.type.class.jsdoc",
             "comment.block.documentation.js variable.other.object.tsx",
             "comment.block.documentation.js variable.other.readwrite.tsx",
@@ -858,8 +870,19 @@
             "comment.block.documentation.js punctuation.separator.key-value.tsx"
         ],
         "settings": {
-            "fontStyle": "",
-            "foreground": "#B95C00"
+            "foreground": "#000000",
+            "fontStyle": ""
+        }
+    }
+	,
+	{
+        "name": "jsdoc", 
+        "scope": [
+            "comment.block.documentation.js storage.type.class.jsdoc"
+        ],
+        "settings": {
+            "foreground": "#000000",
+            "fontStyle": "bold"
         }
     }
 	,

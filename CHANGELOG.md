@@ -4,6 +4,13 @@ All notable changes to the "Daobeam" extension will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.3.10] - 2019-12-8
+### Changed
+- Comments
+    - change foreground color to black to be more readable and higher contrast
+    - JSDoc comment - make storage type bold
+    - HMTL comment - make italic
+
 ## [1.3.9] - 2019-10-15
 ### Changed
 - JSDoc comments

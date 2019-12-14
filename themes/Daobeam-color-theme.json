@@ -104,7 +104,7 @@
         "name": "comment",
         "scope": "comment",
         "settings": {
-            "foreground": "#000000",
+            "foreground": "#005800",
             "fontStyle": ""
         }
     }    
@@ -113,8 +113,7 @@
         "name": "HTML comment",
         "scope": "comment.block.html",
         "settings": {
-            "foreground": "#000000",
-            "fontStyle": "italic"
+            "foreground": "#005800"
         }
     }
 	,
@@ -870,7 +869,7 @@
             "comment.block.documentation.js punctuation.separator.key-value.tsx"
         ],
         "settings": {
-            "foreground": "#000000",
+            "foreground": "#005800",
             "fontStyle": ""
         }
     }
@@ -881,7 +880,7 @@
             "comment.block.documentation.js storage.type.class.jsdoc"
         ],
         "settings": {
-            "foreground": "#000000",
+            "foreground": "#005800",
             "fontStyle": "bold"
         }
     }

@@ -4,6 +4,11 @@ All notable changes to the "Daobeam" extension will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.3.11] - 2019-12-14
+### Changed
+- Comments - change all foreground color to dark green, remove italic from HTML comments
+    - A bit of history: Originally I had used dark green for coloring things for the DOM. Then the VS Code team removed DOM coloring from VS Code. When that happened, green became unused by Doabeam, and available for use in another area. I have decided that dark green works better than black or dark orange (the original Daobeam comment color) for comments against this background.
+
 ## [1.3.10] - 2019-12-8
 ### Changed
 - Comments
